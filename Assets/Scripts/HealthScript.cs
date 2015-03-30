@@ -28,19 +28,11 @@ public class HealthScript : MonoBehaviour {
 					Destroy (gameObject);
 				}
 			}
-			else{//if the entity we are hitting is not an enemy, we just want to destroy the bullet
+			else{//if the entity we are hitting is not an enemy, we just want to handle the collision differently
 
-				if (gameObject.name == "Player 1"){
-					print("player 1 encountered");
-				}
-				else if (gameObject.name == "Player 2"){
-					print("player 2 encountered");
-				}
-				else{
-					print ("else encountered");
+				if (gameObject.name == "Metal Box"){
 					Destroy(entity.gameObject);
 				}
-
 			}
 		}
 	}
