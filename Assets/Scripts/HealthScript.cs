@@ -16,7 +16,7 @@ public class HealthScript : MonoBehaviour {
 		//we check if the game object actually had the bullet script
 		if (entity !=  null) {
 			//if the bullet hits an object that is not an enemy, we don't want it to reduce health
-			if (entity.isShot != isEnemy){
+			if (isEnemy){
 				//we deduct the amount of damage the bullet does
 				health -= entity.damage;
 
@@ -27,6 +27,9 @@ public class HealthScript : MonoBehaviour {
 				if (health <= 0){
 					Destroy (gameObject);
 				}
+			}
+			else{
+				Destroy(entity.gameObject);
 			}
 		}
 	}
