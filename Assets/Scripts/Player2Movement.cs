@@ -3,27 +3,20 @@ using System.Collections;
 
 public class Player2Movement : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
+
+	public Vector2 speed = new Vector2(10,10);
+
+
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("UPARROW")){
-			//we need to move up
-		}
 		
-		if (Input.GetButtonDown("DOWNARROW")) {
-			//we need to move down
-		}
+		float inputX = Input.GetAxis ("HorizontalP2");
+		float inputY = Input.GetAxis ("VerticalP2");
 		
-		if (Input.GetButtonDown("RIGHTARROW")) {
-			//we need to move right
-		}
+		Vector3 movement = new Vector3 (speed.x * inputX, speed.y * inputY, 0);
 		
-		if (Input.GetButtonDown("LEFTARROW")){
-			//we need to move left
-		}
+		movement *= Time.deltaTime;
+		
+		transform.Translate (movement);
 	}
 }

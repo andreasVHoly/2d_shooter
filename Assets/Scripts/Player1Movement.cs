@@ -3,28 +3,19 @@ using System.Collections;
 
 public class Player1Movement : MonoBehaviour {
 
-	public Vector2 speed = new Vector2(20,20);
+	public Vector2 speed = new Vector2(10,10);
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("W")) {
-			//we need to move up
-		}
+
+		float inputX = Input.GetAxis ("HorizontalP1");
+		float inputY = Input.GetAxis ("VerticalP1");
 		
-		if (Input.GetButtonDown("S")) {
-			//we need to move down
-		}
-
-		if (Input.GetButtonDown("D")) {
-			//we need to move right
-		}
-
-		if (Input.GetButtonDown("A")) {
-			//we need to move left
-		}
-
-
+		Vector3 movement = new Vector3 (speed.x * inputX, speed.y * inputY, 0);
 		
-
+		movement *= Time.deltaTime;
+		
+		transform.Translate (movement);
+		   
 	}
 }
