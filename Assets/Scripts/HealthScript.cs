@@ -28,7 +28,7 @@ public class HealthScript : MonoBehaviour {
 					Destroy (gameObject);
 				}
 			}
-			else{
+			else{//if the entity we are hitting is not an enemy, we just want to destroy the bullet
 				Destroy(entity.gameObject);
 			}
 		}

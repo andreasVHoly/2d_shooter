@@ -11,10 +11,13 @@ public class SingleDirMovementScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		//we make a new vector for the movement of where our object should be in relation to the input, and its new position it will attain by moving with its speed
 		Vector3 movement = new Vector3 (speed.x * direction.x, speed.y * direction.y, 0);
 		
+		//we need to change this new position with repect to delta time
 		movement *= Time.deltaTime;
-		
+		//we update the objects position accordinly
 		transform.Translate (movement);
 	}
 }
