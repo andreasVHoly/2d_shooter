@@ -8,12 +8,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
+  - 212: {fileID: 21200000}
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
-  - 212: {fileID: 21200000}
-  - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Player 2
+  m_Name: Metal Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,8 +25,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.16480803, y: .0717574358, z: 0}
-  m_LocalScale: {x: 1.01373982, y: 1, z: 1}
+  m_LocalPosition: {x: -11.7217121, y: -6.16360903, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -37,7 +36,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -55,20 +54,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .999999285, y: 1}
-  m_Center: {x: 4.70374289e-07, y: 0}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9376889ba8e535643afb9091bd5ec02c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 10, y: 10}
+  m_Size: {x: .968541682, y: .96728611}
+  m_Center: {x: .00174772739, y: .00111985207}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -89,7 +76,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e3f4c5a37182ca743ba316058fb5b7bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1d5ee356370c17419c96dbdee81e720, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
