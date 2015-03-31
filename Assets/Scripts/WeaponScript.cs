@@ -9,7 +9,8 @@ public class WeaponScript : MonoBehaviour {
 
 	//a transform for our new bullet to be spawned
 	public Transform bullet;
-	
+
+
 	// Update is called once per frame
 	void Update () {
 		//shooting key for player 2
@@ -32,7 +33,9 @@ public class WeaponScript : MonoBehaviour {
 
 		//if(this.gameObject.GetComponent<Collider2D>() != null){
 			//print ("method entered");
-		Physics2D.IgnoreCollision(shot.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+		//print (shot.gameObject.layer);
+		//print (gameObject.layer);
+
 		//Physics2D.IgnoreCollision(shot.collider2D, this.gameObject.collider2D);
 		//}
 		//we get the dsired direction of the bullet based on the current game objects direction
@@ -40,7 +43,8 @@ public class WeaponScript : MonoBehaviour {
 		//if we got a valid return
 		if (bulletMovement != null){
 			//we set the direction approriately
-			bulletMovement.direction = this.transform.forward;
+			print ("if entered");
+			//bulletMovement.direction = this.transform.forward;
 		}
 	}
 
