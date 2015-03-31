@@ -29,7 +29,6 @@ public class HealthScript : MonoBehaviour {
 				}
 			}
 			else{//if the entity we are hitting is not an enemy, we just want to handle the collision differently
-				print(this.gameObject.name);
 				if (gameObject.name == "Metal Box"){
 					Destroy(entity.gameObject);
 				}

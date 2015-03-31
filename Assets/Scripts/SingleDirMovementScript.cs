@@ -8,7 +8,9 @@ public class SingleDirMovementScript : MonoBehaviour {
 	public Vector3 direction = new Vector3(-1,0,0);
 	//the speed at which the object should move in either direction
 	public Vector2 speed = new Vector2 (10, 10);
-	
+
+
+
 	// Update is called once per frame
 	void Update () {
 
@@ -20,4 +22,21 @@ public class SingleDirMovementScript : MonoBehaviour {
 		//we update the objects position accordinly
 		transform.Translate (movement);
 	}
+
+	public void setDirection(DirectionEnumScript.Direction dir){
+		if (dir == DirectionEnumScript.Direction.NORTH){
+			direction = new Vector3(0,1,0);
+		}
+		else if (dir == DirectionEnumScript.Direction.SOUTH){
+			direction = new Vector3(0,-1,0);
+		}
+		else if (dir == DirectionEnumScript.Direction.EAST){
+			direction = new Vector3(1,0,0);
+		}
+		else{
+			direction = new Vector3(-1,0,0);
+		}
+	}
+
+
 }
