@@ -25,13 +25,22 @@ public class SingleDirMovementScript : MonoBehaviour {
 
 	public void setDirection(DirectionEnumScript.Direction dir){
 		if (dir == DirectionEnumScript.Direction.NORTH){
-			direction = new Vector3(0,1,0);
+			transform.Rotate(new Vector3(0,0,-90));
+			//needs to be set to opposite direction as we are rotating above
+			direction = new Vector3(-1,0,0);
+
 		}
 		else if (dir == DirectionEnumScript.Direction.SOUTH){
-			direction = new Vector3(0,-1,0);
+			transform.Rotate(new Vector3(0,0,90));
+			//needs to be set to opposite direction as we are rotating above, 
+			direction = new Vector3(-1,0,0);
 		}
 		else if (dir == DirectionEnumScript.Direction.EAST){
-			direction = new Vector3(1,0,0);
+			//roate bullet sprite to face proper direction
+			transform.Rotate(new Vector3(0,0,180));
+			//needs to be set to opposite direction as we are rotating above
+			direction = new Vector3(-1,0,0);
+
 		}
 		else{
 			direction = new Vector3(-1,0,0);

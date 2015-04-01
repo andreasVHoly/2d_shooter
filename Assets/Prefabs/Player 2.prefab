@@ -11,9 +11,9 @@ GameObject:
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
   - 212: {fileID: 21200000}
-  - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
+  - 114: {fileID: 11400000}
   m_Layer: 8
   m_Name: Player 2
   m_TagString: Untagged
@@ -67,10 +67,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9376889ba8e535643afb9091bd5ec02c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ef3f5ab26e367f49afb31329b31ae45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
+  direction: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: .25
+  ammo: 100
   bullet: {fileID: 400000, guid: b8547ddd28958c341ae9ebe6ff455ce4, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:

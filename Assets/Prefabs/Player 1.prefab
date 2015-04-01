@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
+  direction: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83,6 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: .25
+  ammo: 100
   bullet: {fileID: 400000, guid: b8547ddd28958c341ae9ebe6ff455ce4, type: 2}
 --- !u!114 &11400004
 MonoBehaviour:
