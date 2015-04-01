@@ -69,8 +69,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0274d24aaa3ca52438140fd98bff76cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 10, y: 10}
+  speed: {x: 1, y: 1}
   direction: {x: 0, y: 0}
+  chasing: 0
+  detectionRange: 50
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

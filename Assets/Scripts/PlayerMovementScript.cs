@@ -34,19 +34,22 @@ public class PlayerMovementScript : MonoBehaviour {
 
 		if(inputX > 0){
 			//print("direction changed to east");
+			//transform.Rotate(new Vector3(0,0,-90));
 			direction = DirectionEnumScript.Direction.EAST;
 		}
 		else if (inputX < 0){
 			//print("direction changed to west");
+			//transform.Rotate(new Vector3(0,0,90));
 			direction = DirectionEnumScript.Direction.WEST;
 		}
-
 		else if(inputY > 0){
 			//print("direction changed to north");
 			direction = DirectionEnumScript.Direction.NORTH;
 		}
 		else if (inputY < 0){
 			//print("direction changed to south");
+			//transform.Rotate(new Vector3(0,0,180));
+			//transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
 			direction = DirectionEnumScript.Direction.SOUTH;
 		}
 

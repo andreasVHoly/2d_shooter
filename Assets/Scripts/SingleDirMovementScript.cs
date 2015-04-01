@@ -36,10 +36,8 @@ public class SingleDirMovementScript : MonoBehaviour {
 			direction = new Vector3(-1,0,0);
 		}
 		else if (dir == DirectionEnumScript.Direction.EAST){
-			//roate bullet sprite to face proper direction
-			transform.Rotate(new Vector3(0,0,180));
-			//needs to be set to opposite direction as we are rotating above
-			direction = new Vector3(-1,0,0);
+			transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+			direction = new Vector3(1,0,0);
 
 		}
 		else{
