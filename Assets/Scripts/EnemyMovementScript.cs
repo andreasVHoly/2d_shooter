@@ -13,10 +13,13 @@ public class EnemyMovementScript : MonoBehaviour {
 
 
 	public float detectionRange = 50f;
+	public float chasingRange = 70f;
 	
 	private GameObject player1;
 
 	private GameObject player2;
+
+	private GameObject prey;
 
 
 
@@ -24,40 +27,92 @@ public class EnemyMovementScript : MonoBehaviour {
 	void Update () {
 
 
-
 		var rayCast = Physics2D.Raycast(this.transform.position, direction, detectionRange, 1 << LayerMask.NameToLayer("Player"));
+		Debug.DrawRay(transform.position, new Vector3(direction.x,direction.y,0), Color.red);
+		var gap = Vector3.Distance(this.transform.position, prey.transform.position);
 
-		if(rayCast){
-			//need to handle chasing
+		if (chasing && gap < chasingRange){
+			print("chasing");
+			Vector3 target = prey.transform.position;
+			Vector3 hunter = this.transform.position;
+
 			//check x
+			if (hunter.x < target.x ){
+				//move right
+				direction.x = 1;
+				//print("hunter right");
+			}
+			else if (hunter.x > target.x){
+				//move left
+				direction.x  = -1;
+				//print("hunter left");
+				
+			}
+			else{
+				//stay still
+				direction.x = 0;	
+				//print("hunter stay x");
+				
+			}
 
 			//check y
+			if (hunter.y < target.y ){
+				//move up
+				direction.y = 1;
+				//print("hunter up");
+				
+			}
+			else if (hunter.y > target.y){
+				//move down
+				direction.y = -1;
+				//print("hunter down");
+				
+			}
+			else{
+				//stay still
+				direction.y = 0;
+				//print("hunter stay y");
+				
+			}
+		}
+		else if(rayCast){
+			prey = rayCast.transform.gameObject;
+			chasing = true;
+			print("raycasting");
 		}
 		else{
 			//if not in range
+			print("chilling");
+
 			counter++;
-			
+			chasing = false;
 			//if we have moved for 120ms(2s)
 			if (counter > 120) {
 				//we get a random number to decide our direction of movement
 				int number = Random.Range (0, 3);
 				//we move up
-				if (number == 0) {
-					direction = new Vector2(0,1);
-				}
-				//we move down
-				else if (number == 1) {
-					direction = new Vector2(0,-1);
-				}
-				//we move left
-				else if (number == 2) {
-					direction = new Vector2(1,0);
-				}
-				//we move right
-				else if (number == 3) {
-					direction = new Vector2(-1,0);
-				}
-				
+				switch(number){
+					//we move up
+					case 0:
+						direction = new Vector2(0,1);
+						break;
+					//we move down
+					case 1:
+						direction = new Vector2(0,-1);
+						break;
+					//we move left
+					case 2:
+						direction = new Vector2(1,0);
+						break;
+					//we move right
+					case  3:
+						direction = new Vector2(-1,0);
+						break;
+					default:
+						direction = new Vector2(0,1);
+						break;
+
+				}	
 				counter = 0;
 			}
 			// a new vector to devcide our 
