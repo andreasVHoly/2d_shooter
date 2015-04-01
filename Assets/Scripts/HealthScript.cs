@@ -12,6 +12,7 @@ public class HealthScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D collider){
 		//we access the colliding entity and look if the colliding game object has the bullet script as a component
 		//if this is true, this object must be a bullet, as only bullets own this component
+		//print(collider.name);
 		BulletScript entity = collider.gameObject.GetComponent<BulletScript> ();
 		//we check if the game object actually had the bullet script
 		if (entity !=  null) {
@@ -29,10 +30,35 @@ public class HealthScript : MonoBehaviour {
 				}
 			}
 			else{//if the entity we are hitting is not an enemy, we just want to handle the collision differently
+				print(gameObject.name);
 				if (gameObject.name == "Metal Box"){
 					Destroy(entity.gameObject);
 				}
+				else if (gameObject.name == "AmmoPack" || gameObject.name == "AmmoPack"){
+					print("ammo");
+				}
+				else if (gameObject.name == "HealthPack"){
+					print("health");
+				}
+				else if (gameObject.name == "BatteryPack"){
+					print("battery");
+				}
 			}
 		}
+		else if (collider.name == "AmmoPack"){
+			this.gameObject.GetComponent<WeaponScript>().ammo = 260;
+			Destroy(collider.gameObject);
+
+		}
+		else if (collider.name == "HealthPack"){
+			this.gameObject.GetComponent<HealthScript>().health = 100;
+			Destroy(collider.gameObject);
+		}
+		else if (collider.name == "BatteryPack"){
+			this.gameObject.GetComponent<BatteryScript>().charge = 100;
+			Destroy(collider.gameObject);
+		}
+
+
 	}
 }
