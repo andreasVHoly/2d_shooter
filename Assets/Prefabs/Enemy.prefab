@@ -55,7 +55,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Size: {x: .999999285, y: 1}
   m_Center: {x: 4.70374289e-07, y: 0}
 --- !u!114 &11400000
@@ -72,6 +72,7 @@ MonoBehaviour:
   speed: {x: 1, y: 1}
   direction: {x: 0, y: 0}
   chasing: 0
+  damage: 20
   detectionRange: 50
   chasingRange: 70
 --- !u!114 &11400002
@@ -87,6 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isEnemy: 1
+  scripts: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -6,7 +6,7 @@ public class DirectionEnumScript : MonoBehaviour {
 	public enum Direction {NORTH,SOUTH,WEST,EAST};
 
 
-	public Direction getOpposite(Direction dir){
+	public static Direction getOpposite(Direction dir){
 		if (dir == Direction.NORTH){
 			return Direction.SOUTH;
 		}

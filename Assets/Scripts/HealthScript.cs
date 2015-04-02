@@ -15,7 +15,7 @@ public class HealthScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D collider){
 		//we access the colliding entity and look if the colliding game object has the bullet script as a component
 		//if this is true, this object must be a bullet, as only bullets own this component
-		//print(collider.name);
+		print(collider.name);
 		BulletScript entity = collider.gameObject.GetComponent<BulletScript> ();
 		//we check if the game object actually had the bullet script
 		if (entity !=  null) {
@@ -38,8 +38,10 @@ public class HealthScript : MonoBehaviour {
 				}
 			}
 		}
+
 		else if(collider.name == "Enemy" && (this.gameObject.name == "Player 1" || this.gameObject.name == "Player 2")){
 			this.health -= collider.GetComponent<EnemyMovementScript>().damage;
+			print("health deducted");
 			Destroy(collider.gameObject);
 			if (health <= 0){
 				if (this.gameObject.name == "Player 1"){
@@ -51,6 +53,28 @@ public class HealthScript : MonoBehaviour {
 				Destroy(this.gameObject);
 			}
 		}
+		else if(collider.name == "Enemy" && (this.gameObject.name == "Metal Box" || this.gameObject.name == "Box")){
+
+			EnemyMovementScript enemy = collider.gameObject.GetComponent<EnemyMovementScript>();
+			DirectionEnumScript.Direction dir = DirectionEnumScript.getOpposite(enemy.orientation);
+			if (dir == DirectionEnumScript.Direction.NORTH){
+				enemy.direction = new Vector2(0,1);
+			}
+			else if (dir == DirectionEnumScript.Direction.SOUTH){
+				enemy.direction = new Vector2(0,-1);
+			}
+		else if (dir == DirectionEnumScript.Direction.EAST){
+				enemy.direction = new Vector2(1,0);
+			}
+			else {
+				enemy.direction = new Vector2(-1,0);
+			}
+		}
+		else if(collider.name == "Enemy" &&  this.gameObject.name == "Enemy"){
+			collider.gameObject.GetComponent<EnemyMovementScript>().move = true;
+			this.gameObject.GetComponent<EnemyMovementScript>().move = true;
+		}
+
 		else if (collider.name == "AmmoPack"){
 			this.gameObject.GetComponent<WeaponScript>().ammo = 260;
 			Destroy(collider.gameObject);

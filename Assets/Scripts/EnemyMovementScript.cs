@@ -13,6 +13,7 @@ public class EnemyMovementScript : MonoBehaviour {
 
 	public int damage = 20;
 
+	public DirectionEnumScript.Direction orientation = DirectionEnumScript.Direction.NORTH;
 
 	public float detectionRange = 30f;
 	public float chasingRange = 6.5f;
@@ -23,7 +24,7 @@ public class EnemyMovementScript : MonoBehaviour {
 
 	private GameObject prey;
 
-
+	public bool move = false;
 
 
 
@@ -45,11 +46,13 @@ public class EnemyMovementScript : MonoBehaviour {
 				if (hunter.x < target.x ){
 					//move right
 					direction.x = 1;
+					orientation = DirectionEnumScript.Direction.EAST;
 					//print("hunter right");
 				}
 				else if (hunter.x > target.x){
 					//move left
 					direction.x  = -1;
+					orientation = DirectionEnumScript.Direction.WEST;
 					//print("hunter left");
 					
 				}
@@ -64,12 +67,14 @@ public class EnemyMovementScript : MonoBehaviour {
 				if (hunter.y < target.y ){
 					//move up
 					direction.y = 1;
+					orientation = DirectionEnumScript.Direction.NORTH;
 					//print("hunter up");
 					
 				}
 				else if (hunter.y > target.y){
 					//move down
 					direction.y = -1;
+					orientation = DirectionEnumScript.Direction.SOUTH;
 					//print("hunter down");
 					
 				}
@@ -97,32 +102,42 @@ public class EnemyMovementScript : MonoBehaviour {
 			counter++;
 			chasing = false;
 			//if we have moved for 120ms(2s)
-			if (counter > 120) {
+			if (counter > 120 || move) {
 				//we get a random number to decide our direction of movement
-				int number = Random.Range (0, 3);
-				//we move up
-				switch(number){
-					//we move up
-					case 0:
-						direction = new Vector2(0,1);
-						break;
-					//we move down
-					case 1:
-						direction = new Vector2(0,-1);
-						break;
-					//we move left
-					case 2:
-						direction = new Vector2(1,0);
-						break;
-					//we move right
-					case  3:
-						direction = new Vector2(-1,0);
-						break;
-					default:
-						direction = new Vector2(0,1);
-						break;
 
-				}	
+				if (!move){
+					int number = Random.Range (0, 3);
+					//we move up
+					switch(number){
+						//we move up
+						case 0:
+							direction = new Vector2(0,1);
+							orientation = DirectionEnumScript.Direction.NORTH;
+							break;
+						//we move down
+						case 1:
+							direction = new Vector2(0,-1);
+							orientation = DirectionEnumScript.Direction.SOUTH;
+							break;
+						//we move right
+						case 2:
+							direction = new Vector2(1,0);
+							orientation = DirectionEnumScript.Direction.EAST;
+							break;
+						//we move left
+						case  3:
+							direction = new Vector2(-1,0);
+							orientation = DirectionEnumScript.Direction.WEST;
+							break;
+						default:
+							direction = new Vector2(0,1);
+							orientation = DirectionEnumScript.Direction.NORTH;
+							break;
+
+					}
+				}
+
+				move = false;
 				counter = 0;
 			}
 			// a new vector to devcide our 
@@ -133,44 +148,6 @@ public class EnemyMovementScript : MonoBehaviour {
 		movement *= Time.deltaTime;
 		
 		transform.Translate (movement);
-		//need to check distances
-		//if true
-			//check which player is closer
-			//set chasing to true
-
-		/*float distance1 = Vector3.Distance(player1.transform.position, this.gameObject.transform.position);
-
-		//get player2's distance from our enemy
-		float distance2 = Vector3.Distance(player2.transform.position, this.gameObject.transform.position);
-
-		Vector3 direction;
-		//we want to see if both playe rs are within range
-		if (distance1 <= detectionRange || distance2 <= detectionRange){
-			//see which player is closer
-			if (distance1 < distance2){
-
-			}
-			else{
-
-				
-			}
-		}*/
-
-
-
-
-
-
-
-		//if not true
-			//increment counter
-			//set chasing to false
-			//check counter
-				//move in new direction
-			//else
-				//move in old direction
-
-
 
 
 	}
