@@ -9,7 +9,9 @@ public class WeaponScript : MonoBehaviour {
 
 
 	//ammo variable
-	public int ammo = 5;
+	public int ammo = 100;
+
+	public AmmoCountScript ammoScript;
 
 	//a transform for our new bullet to be spawned
 	public Transform bullet;
@@ -22,6 +24,7 @@ public class WeaponScript : MonoBehaviour {
 			if(ammo > 0){
 				this.spawnBullet ();
 				this.ammo--;
+				ammoScript.amount = this.ammo;
 			}
 		}
 		//shooting key for player 1
@@ -29,6 +32,7 @@ public class WeaponScript : MonoBehaviour {
 			if(ammo > 0){
 				this.spawnBullet ();
 				this.ammo--;
+				ammoScript.amount = this.ammo;
 			}
 		}
 	}
@@ -42,34 +46,6 @@ public class WeaponScript : MonoBehaviour {
 		DirectionEnumScript.Direction dir =  this.gameObject.GetComponent<PlayerMovementScript>().direction;
 		//default
 		shot.position = this.transform.position;
-		//trying to spawn the bullet at the right location
-		//Vector3 pos;
-		//we need to set the bullet to be at the edge of the sprite
-
-
-		/*if (dir == DirectionEnumScript.Direction.NORTH){
-			//shot.transform.rotation = Qu
-			shot.transform.Rotate(new Vector3(0,0,-90));
-		//	pos = new Vector3(this.transform.position.x,this.transform.position.y,0) ;
-		}
-		else if (dir == DirectionEnumScript.Direction.SOUTH){
-			shot.transform.Rotate(new Vector3(0,0,90));
-		//	pos = new Vector3(this.transform.position.x,this.transform.position.y,0) ;
-		}
-		else if (dir == DirectionEnumScript.Direction.EAST){
-			shot.transform.Rotate(new Vector3(0,0,180));
-
-		//	pos = new Vector3(this.transform.position.x,this.transform.position.y,0) ;
-		}*/
-
-
-		//else {
-		//	pos = new Vector3(this.transform.position.x,this.transform.position.y,0) ;
-		//}
-		//shot.position = pos;
-
-
-
 
 		//we get the desired direction of the bullet based on the current game objects direction
 		SingleDirMovementScript bulletMovement = shot.gameObject.GetComponent<SingleDirMovementScript>();
