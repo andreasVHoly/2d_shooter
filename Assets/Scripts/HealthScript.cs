@@ -43,7 +43,7 @@ public class HealthScript : MonoBehaviour {
 
 		else if(collider.name == "Enemy" && (this.gameObject.name == "Player 1" || this.gameObject.name == "Player 2")){
 			this.health -= collider.GetComponent<EnemyMovementScript>().damage;
-			bar.amount = health/100;
+			bar.amount = (float)(health/100.0);
 			//print(health/100);
 			//print("health deducted");
 			Destroy(collider.gameObject);
