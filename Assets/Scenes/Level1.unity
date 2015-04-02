@@ -152,6 +152,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &9808503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -250,6 +251,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &15805423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -521,6 +523,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &55866304
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -619,6 +622,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &58489529
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -816,6 +820,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1 &75891551
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,6 +868,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &75891554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -961,6 +967,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &90566615
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1059,6 +1066,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &91385896
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1185,6 +1193,10 @@ Prefab:
       propertyPath: ammoScript
       value: 
       objectReference: {fileID: 225242746}
+    - target: {fileID: 11400004, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
   m_RootGameObject: {fileID: 1386526076}
@@ -1292,6 +1304,10 @@ Prefab:
       propertyPath: ammoScript
       value: 
       objectReference: {fileID: 1601514883}
+    - target: {fileID: 11400002, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
   m_RootGameObject: {fileID: 436004971}
@@ -1379,6 +1395,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &101233631
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1477,6 +1494,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &107848803
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1575,6 +1593,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &108283065
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1721,6 +1740,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &110136488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1848,6 +1868,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &127271609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1994,6 +2015,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &136639921
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2128,6 +2150,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &162034592
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2337,6 +2360,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1001 &187293253
 Prefab:
   m_ObjectHideFlags: 0
@@ -2400,6 +2424,10 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
   m_RootGameObject: {fileID: 1642127494}
@@ -2452,6 +2480,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &223251454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2629,6 +2658,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &227517920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2691,7 +2721,7 @@ GameObject:
   - 222: {fileID: 239453172}
   - 114: {fileID: 239453171}
   m_Layer: 5
-  m_Name: Image
+  m_Name: RightSkull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2854,6 +2884,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &246831096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3047,6 +3078,10 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
   m_RootGameObject: {fileID: 1406687669}
@@ -3115,6 +3150,10 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
   m_RootGameObject: {fileID: 474492828}
@@ -3207,6 +3246,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &262442372
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3317,6 +3357,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &267044423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3415,6 +3456,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &268056261
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3709,6 +3751,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &314669736
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3795,6 +3838,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &319294099
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3905,6 +3949,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &324408102
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4003,6 +4048,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &331709753
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4101,6 +4147,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &335079957
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4199,6 +4246,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &343264174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4337,6 +4385,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &372688981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4435,6 +4484,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &373475088
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4581,6 +4631,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &385797637
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4679,6 +4730,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!50 &389343607
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -4777,6 +4829,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &393861513
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4863,6 +4916,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &405087728
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4973,6 +5027,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &405090257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5071,6 +5126,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &411712019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5378,6 +5434,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 530343660}
   bar: {fileID: 1627490911}
+  kills: {fileID: 1205804564}
 --- !u!114 &436004978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5471,6 +5528,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &438660407
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5665,6 +5723,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &459709789
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5763,6 +5822,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &465711876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5861,6 +5921,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &472394820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5995,6 +6056,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 1205804564}
 --- !u!114 &474492831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6184,6 +6246,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &499210134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6358,6 +6421,10 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
   m_RootGameObject: {fileID: 1709887129}
@@ -6410,6 +6477,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &506519320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6524,6 +6592,10 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
   m_RootGameObject: {fileID: 1119599464}
@@ -6576,6 +6648,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &511387201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6674,6 +6747,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &511767768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6823,6 +6897,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1001 &520300857
 Prefab:
   m_ObjectHideFlags: 0
@@ -7010,6 +7085,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &533699682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7096,6 +7172,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &545027462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7206,6 +7283,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &546253652
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7336,6 +7414,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &572813291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7434,6 +7513,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!50 &579948300
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7532,6 +7612,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &581549478
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7618,6 +7699,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &582174541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7716,6 +7798,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &585814309
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7977,6 +8060,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &605949542
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8404,6 +8488,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1 &667663693
 GameObject:
   m_ObjectHideFlags: 0
@@ -8451,6 +8536,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &667663696
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8617,6 +8703,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &671771002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8731,6 +8818,10 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
   m_RootGameObject: {fileID: 2051671171}
@@ -8834,6 +8925,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1001 &691749148
 Prefab:
   m_ObjectHideFlags: 0
@@ -8929,6 +9021,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &715938744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9027,6 +9120,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &721999138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9125,6 +9219,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &728008819
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9274,6 +9369,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1 &734976687
 GameObject:
   m_ObjectHideFlags: 0
@@ -9321,6 +9417,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &734976690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9419,6 +9516,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &753894473
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9517,6 +9615,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &762099651
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9615,6 +9714,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &762116960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9713,6 +9813,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &766816601
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9811,6 +9912,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &768135883
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10005,6 +10107,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &789647627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10104,6 +10207,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 1205804564}
 --- !u!114 &795194509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10362,6 +10466,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &852610531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10448,6 +10553,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &860251127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10558,6 +10664,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &875153256
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10644,6 +10751,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &876004432
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10754,6 +10862,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &878830749
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10882,6 +10991,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &886244421
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10980,6 +11090,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &901733754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11078,6 +11189,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &906644744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11244,6 +11356,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &908937072
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11437,6 +11550,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &937586433
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11635,6 +11749,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &948436487
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11796,6 +11911,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1 &962138234
 GameObject:
   m_ObjectHideFlags: 0
@@ -11843,6 +11959,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &962138237
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11989,6 +12106,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &975535598
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12138,6 +12256,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1001 &1000502327
 Prefab:
   m_ObjectHideFlags: 0
@@ -12233,6 +12352,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1013052249
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12379,6 +12499,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1018899051
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12648,6 +12769,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1040502592
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12759,6 +12881,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 1205804564}
 --- !u!114 &1046562085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12877,6 +13000,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!50 &1053941012
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -13010,6 +13134,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1072261657
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13159,6 +13284,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1 &1088183410
 GameObject:
   m_ObjectHideFlags: 0
@@ -13206,6 +13332,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1088183413
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13484,6 +13611,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1111938383
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13689,6 +13817,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 1205804564}
 --- !u!1001 &1124494214
 Prefab:
   m_ObjectHideFlags: 0
@@ -13788,6 +13917,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1128466895
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13886,6 +14016,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1143367651
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14051,6 +14182,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1176781153
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14161,6 +14293,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1182119464
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14259,6 +14392,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1182779144
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14345,6 +14479,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1183240215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14484,6 +14619,85 @@ Prefab:
   m_RootGameObject: {fileID: 684522279}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1205804562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1205804563}
+  - 222: {fileID: 1205804566}
+  - 114: {fileID: 1205804565}
+  - 114: {fileID: 1205804564}
+  m_Layer: 5
+  m_Name: KillCount
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1205804563
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205804562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1747268897}
+  m_RootOrder: 8
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 0, y: 205}
+  m_SizeDelta: {x: 64, y: 35}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1205804564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205804562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c9c7a5ce776554195eb0a40a69527d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 0
+--- !u!114 &1205804565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205804562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1205804566
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205804562}
 --- !u!1001 &1208353217
 Prefab:
   m_ObjectHideFlags: 0
@@ -14567,6 +14781,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1210031390
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14665,6 +14880,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1222276284
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14775,6 +14991,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1228109165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14873,6 +15090,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1270864489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14959,6 +15177,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1271015348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15109,6 +15328,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1286604877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15207,6 +15427,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!50 &1288149213
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -15305,6 +15526,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1291484104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15403,6 +15625,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1303730647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15501,6 +15724,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1309487880
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15599,6 +15823,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1331280752
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15697,6 +15922,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1333470296
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15795,6 +16021,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1334785666
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15893,6 +16120,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1337950662
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15991,6 +16219,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1342757258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16089,6 +16318,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1345197995
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16270,6 +16500,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1368154265
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16572,6 +16803,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 530343660}
   bar: {fileID: 2096739048}
+  kills: {fileID: 1205804564}
 --- !u!114 &1386526084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16649,6 +16881,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1405753388
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16748,6 +16981,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 1205804564}
 --- !u!114 &1406687672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16866,6 +17100,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1409536673
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16964,6 +17199,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1420403068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17062,6 +17298,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1425843696
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17211,6 +17448,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1 &1433657131
 GameObject:
   m_ObjectHideFlags: 0
@@ -17258,6 +17496,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1433657134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17357,6 +17596,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 1205804564}
 --- !u!114 &1442610977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17475,6 +17715,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!50 &1442847100
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -17608,6 +17849,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1466906457
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17793,6 +18035,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1495347654
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17892,6 +18135,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 1205804564}
 --- !u!114 &1511945396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18074,6 +18318,10 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
   m_RootGameObject: {fileID: 1046562082}
@@ -18154,6 +18402,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1547404071
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18335,7 +18584,7 @@ GameObject:
   - 222: {fileID: 1559577270}
   - 114: {fileID: 1559577269}
   m_Layer: 5
-  m_Name: Image
+  m_Name: LeftSkull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18432,6 +18681,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1562838340
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18530,6 +18780,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1563262341
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18676,6 +18927,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1569142352
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18774,6 +19026,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1571853849
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18872,6 +19125,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1579998997
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19049,6 +19303,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1 &1600988485
 GameObject:
   m_ObjectHideFlags: 0
@@ -19096,6 +19351,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1600988488
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19261,6 +19517,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1603342975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19371,6 +19628,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1607911220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19533,6 +19791,10 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
   m_RootGameObject: {fileID: 795194506}
@@ -19585,6 +19847,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1613016628
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19810,6 +20073,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 1205804564}
 --- !u!114 &1642127497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19916,6 +20180,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1643024753
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20074,6 +20339,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1663158061
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20284,6 +20550,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1679626521
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20462,6 +20729,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1693014783
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20608,6 +20876,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1707134253
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20706,6 +20975,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1708302857
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20805,6 +21075,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 1205804564}
 --- !u!114 &1709887132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20977,6 +21248,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1716765026
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21170,6 +21442,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1743723448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21311,6 +21584,7 @@ RectTransform:
   - {fileID: 225242743}
   - {fileID: 1559577268}
   - {fileID: 239453170}
+  - {fileID: 1205804563}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
@@ -21365,6 +21639,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1751755105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21463,6 +21738,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1756572557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21609,6 +21885,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1774503195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21707,6 +21984,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1780117503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21805,6 +22083,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1796732255
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22028,6 +22307,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1812563282
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22126,6 +22406,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1816353746
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22256,6 +22537,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1826266911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22405,6 +22687,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1 &1837642029
 GameObject:
   m_ObjectHideFlags: 0
@@ -22452,6 +22735,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1837642032
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22601,6 +22885,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1 &1840720449
 GameObject:
   m_ObjectHideFlags: 0
@@ -22636,6 +22921,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1840720451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22746,6 +23032,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1843428391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22860,6 +23147,10 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
   m_RootGameObject: {fileID: 1442610974}
@@ -22912,6 +23203,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1861493900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23010,6 +23302,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1866216776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23143,6 +23436,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1876067423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23241,6 +23535,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1878664730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23390,6 +23685,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1001 &1898327069
 Prefab:
   m_ObjectHideFlags: 0
@@ -23485,6 +23781,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1906165207
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23584,6 +23881,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 1205804564}
 --- !u!114 &1915667490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23718,6 +24016,10 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
   m_RootGameObject: {fileID: 1915667487}
@@ -23770,6 +24072,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1945329378
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23856,6 +24159,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1945354138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24022,6 +24326,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1954178734
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24180,6 +24485,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1966516206
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24294,6 +24600,10 @@ Prefab:
       propertyPath: m_Layer
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
+      propertyPath: kills
+      value: 
+      objectReference: {fileID: 1205804564}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd2791fb96cd2464384bdc32de303a1d, type: 2}
   m_RootGameObject: {fileID: 1511945393}
@@ -24346,6 +24656,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1970732093
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24444,6 +24755,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1998042858
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24593,6 +24905,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!1 &1998543752
 GameObject:
   m_ObjectHideFlags: 0
@@ -24640,6 +24953,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1998543755
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24738,6 +25052,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &1999829283
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24868,6 +25183,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2008444080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24966,6 +25282,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2008756360
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25112,6 +25429,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2011758334
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25198,6 +25516,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2026351475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25308,6 +25627,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2030091805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25394,6 +25714,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2030821205
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25504,6 +25825,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2031105562
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25602,6 +25924,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2046805564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25701,6 +26024,7 @@ MonoBehaviour:
   isEnemy: 1
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 1205804564}
 --- !u!114 &2051671174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25819,6 +26143,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2060594160
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25917,6 +26242,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2071057701
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26015,6 +26341,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2075460997
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26113,6 +26440,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2075613819
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26211,6 +26539,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2095419104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26383,6 +26712,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2110885876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26529,6 +26859,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2116550377
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26627,6 +26958,7 @@ MonoBehaviour:
   isEnemy: 0
   scripts: {fileID: 0}
   bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!61 &2123724080
 BoxCollider2D:
   m_ObjectHideFlags: 0

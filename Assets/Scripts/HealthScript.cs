@@ -12,6 +12,8 @@ public class HealthScript : MonoBehaviour {
 
 	public HealthBarScript bar;
 
+	public KillCountScript kills;
+
 
 	//we want to hande collisions manually in order to reduce health
 	void OnTriggerEnter2D(Collider2D collider){
@@ -29,8 +31,13 @@ public class HealthScript : MonoBehaviour {
 				//we destroy the bullet as it has had an impact
 				Destroy(entity.gameObject);
 
+
+
 				//if this object has no health anymore, we destroy it as it is dead
 				if (health <= 0){
+					if(this.gameObject.name == "Enemy"){
+						kills.amount += 1;
+					}
 					Destroy (gameObject);
 				}
 			}
