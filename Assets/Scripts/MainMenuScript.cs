@@ -26,12 +26,15 @@ public class MainMenuScript : MonoBehaviour {
 
 	void OnGUI(){
 		GUI.skin = buttonSkin;
-		if(GUI.Button(new Rect(startX,startY,width,height),"New Game")){
+		if(GUI.Button(new Rect(startX,startY-100,width,height),"New Game")){
 			Application.LoadLevel("Level1");
 		}
+		if(GUI.Button(new Rect(startX,startY+100,width,height),"Exit")){
+			Application.Quit();
+		}
+
 
 		GUI.skin = textSkin;
-	//	GUI.Label(new Rect(sWidth - 50,sHeight - 100,100,50),"Darkness");
 		GUI.Label(new Rect(sWidth/2-550/2,50,550, 300),"Darkness");
 
 	}

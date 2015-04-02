@@ -12,13 +12,16 @@ public class GameOverScript : MonoBehaviour {
 	private float startY;
 	private float width;
 	private float height;
+
+	public GUISkin buttonSkin;
 	
 	
 	
 	void Start(){
+		//print ("start called");
 		sWidth = Screen.width;
-		sHeight = Screen.width;
-		width = (float)(sWidth/5);
+		sHeight = Screen.height;
+		width = (float)(sWidth/2)-150;
 		height = (float)(sHeight/2);
 
 	}
@@ -26,14 +29,20 @@ public class GameOverScript : MonoBehaviour {
 
 
 	void OnGUI(){
-		//GUI.skin = buttonSkin;
-		if(GUI.Button(new Rect(width*2,height,100,50),"Retry")){
+		GUI.skin = buttonSkin;
+		//if(GUI.Button(new Rect(width*2,height,100,50),"Retry")){
+		//print("called");
+
+		if(GUI.Button(new Rect(width,height - 100,300,70),"Retry")){
+
 			Application.LoadLevel("Level1");
 		}
-		if(GUI.Button(new Rect(width*4,height,100,50),"Main Menu")){
+		if(GUI.Button(new Rect(width,height,300,70),"Main Menu")){
 			Application.LoadLevel("MainMenu");
 		}
-	
+		if(GUI.Button(new Rect(width,height + 100,300,70),"Exit")){
+			Application.Quit();
+		}
 	}
 
 

@@ -40,7 +40,7 @@ public class EnemyMovementScript : MonoBehaviour {
 				return;
 			}
 			float gap = Vector3.Distance(this.transform.position, prey.transform.position);
-			if (gap < chasingRange){
+			if (gap < chasingRange && !move){
 				//print("chasing " + gap);
 				Vector3 target = prey.transform.position;
 				Vector3 hunter = this.transform.position;
