@@ -11,6 +11,8 @@ public class EnemyMovementScript : MonoBehaviour {
 
 	public bool chasing = false;
 
+	public int damage = 20;
+
 
 	public float detectionRange = 30f;
 	public float chasingRange = 6.5f;

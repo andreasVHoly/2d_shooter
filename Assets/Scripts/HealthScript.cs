@@ -8,6 +8,9 @@ public class HealthScript : MonoBehaviour {
 	//if the object should be identified as an enemy
 	public bool isEnemy = true;
 
+	public GameObject scripts;
+
+
 	//we want to hande collisions manually in order to reduce health
 	void OnTriggerEnter2D(Collider2D collider){
 		//we access the colliding entity and look if the colliding game object has the bullet script as a component
@@ -30,19 +33,22 @@ public class HealthScript : MonoBehaviour {
 				}
 			}
 			else{//if the entity we are hitting is not an enemy, we just want to handle the collision differently
-				print(gameObject.name);
 				if (gameObject.name == "Metal Box"){
 					Destroy(entity.gameObject);
 				}
-				else if (gameObject.name == "AmmoPack" || gameObject.name == "AmmoPack"){
-					print("ammo");
+			}
+		}
+		else if(collider.name == "Enemy" && (this.gameObject.name == "Player 1" || this.gameObject.name == "Player 2")){
+			this.health -= collider.GetComponent<EnemyMovementScript>().damage;
+			Destroy(collider.gameObject);
+			if (health <= 0){
+				if (this.gameObject.name == "Player 1"){
+					scripts.GetComponent<LevelLoaderScript>().player1Dead = true;
 				}
-				else if (gameObject.name == "HealthPack"){
-					print("health");
+				else{
+					scripts.GetComponent<LevelLoaderScript>().player2Dead = true;
 				}
-				else if (gameObject.name == "BatteryPack"){
-					print("battery");
-				}
+				Destroy(this.gameObject);
 			}
 		}
 		else if (collider.name == "AmmoPack"){
@@ -57,6 +63,14 @@ public class HealthScript : MonoBehaviour {
 		else if (collider.name == "BatteryPack"){
 			this.gameObject.GetComponent<BatteryScript>().charge = 100;
 			Destroy(collider.gameObject);
+		}
+		else if (collider.name == "Spawn"){
+			if(this.gameObject.name == "Player 1"){
+				scripts.GetComponent<LevelLoaderScript>().player1 = true;
+			}
+			else if(this.gameObject.name == "Player 2"){
+				scripts.GetComponent<LevelLoaderScript>().player2 = true;
+			}
 		}
 
 
