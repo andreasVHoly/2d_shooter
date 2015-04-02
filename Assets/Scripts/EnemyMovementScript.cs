@@ -35,7 +35,10 @@ public class EnemyMovementScript : MonoBehaviour {
 		var rayCast = Physics2D.Raycast(this.transform.position, direction, detectionRange, 1 << LayerMask.NameToLayer("Player"));
 		Debug.DrawRay(transform.position, new Vector3(direction.x,direction.y,0), Color.red);
 		if (chasing){
-
+			if (prey == null){
+				chasing = false;
+				return;
+			}
 			float gap = Vector3.Distance(this.transform.position, prey.transform.position);
 			if (gap < chasingRange){
 				//print("chasing " + gap);

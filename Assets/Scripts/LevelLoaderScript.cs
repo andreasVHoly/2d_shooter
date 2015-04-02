@@ -18,6 +18,7 @@ public class LevelLoaderScript : MonoBehaviour {
 			Application.LoadLevel("MainMenu");
 		}
 		if (player1Dead && player2Dead){
+			print("should be loading next level");
 			scripts.AddComponent<GameOverScript>();
 		}
 
