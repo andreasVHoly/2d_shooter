@@ -10,6 +10,8 @@ public class HealthScript : MonoBehaviour {
 
 	public GameObject scripts;
 
+	public HealthBarScript bar;
+
 
 	//we want to hande collisions manually in order to reduce health
 	void OnTriggerEnter2D(Collider2D collider){
@@ -41,6 +43,8 @@ public class HealthScript : MonoBehaviour {
 
 		else if(collider.name == "Enemy" && (this.gameObject.name == "Player 1" || this.gameObject.name == "Player 2")){
 			this.health -= collider.GetComponent<EnemyMovementScript>().damage;
+			bar.amount = health/100;
+			//print(health/100);
 			//print("health deducted");
 			Destroy(collider.gameObject);
 			if (health <= 0){
