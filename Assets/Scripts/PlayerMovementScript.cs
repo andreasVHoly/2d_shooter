@@ -5,16 +5,28 @@ public class PlayerMovementScript : MonoBehaviour {
 
 	//a vector we assign for our speed in the x,y direction
 	public Vector2 speed = new Vector2(10,10);
-	
+
 
 	public DirectionEnumScript.Direction direction;
+	
+
+	public Sprite left;
+	public Sprite right;
+	public Sprite up;
+	public Sprite down;
+
+	SpriteRenderer srender;
+
 
 	void Start(){
 		direction = DirectionEnumScript.Direction.NORTH;
+		srender = this.gameObject.GetComponent<SpriteRenderer>();
 	}
 
 	// Update is called once per frame
 	void Update () {
+
+
 
 		float inputX = 0, inputY = 0;
 
@@ -32,26 +44,33 @@ public class PlayerMovementScript : MonoBehaviour {
 			inputY = Input.GetAxis ("VerticalP2");
 		}
 
+
+
 		if(inputX > 0){
-			//print("direction changed to east");
-			//transform.Rotate(new Vector3(0,0,-90));
 			direction = DirectionEnumScript.Direction.EAST;
+			if(srender.sprite != right){
+				srender.sprite = right;
+			}
 		}
 		else if (inputX < 0){
-			//print("direction changed to west");
-			//transform.Rotate(new Vector3(0,0,90));
 			direction = DirectionEnumScript.Direction.WEST;
+			if(srender.sprite != left){
+				srender.sprite = left;
+			}
 		}
 		else if(inputY > 0){
-			//print("direction changed to north");
 			direction = DirectionEnumScript.Direction.NORTH;
+			if(srender.sprite != up){
+				srender.sprite = up;
+			}
 		}
 		else if (inputY < 0){
-			//print("direction changed to south");
-			//transform.Rotate(new Vector3(0,0,180));
-			//transform.localScale = new Vector3(transform.localScale.x, -transform.localScale.y, transform.localScale.z);
 			direction = DirectionEnumScript.Direction.SOUTH;
+			if(srender.sprite != down){
+				srender.sprite = down;
+			}
 		}
+
 
 		//we make a new vector for the movement of where our object should be in relation to the input, and its new position it will attain by moving with its speed
 		Vector3 movement = new Vector3 (speed.x * inputX, speed.y * inputY, 0);
