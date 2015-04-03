@@ -49,7 +49,7 @@ public class EnemyMovementScript : MonoBehaviour {
 				return;
 			}
 			float gap = Vector3.Distance(this.transform.position, prey.transform.position);
-			if (gap < chasingRange && !move){
+			if (gap < chasingRange){
 				//print("chasing " + gap);
 				Vector3 target = prey.transform.position;
 				Vector3 hunter = this.transform.position;
@@ -115,38 +115,38 @@ public class EnemyMovementScript : MonoBehaviour {
 			//if we have moved for 120ms(2s)
 			if (counter > 120 || move) {
 				//we get a random number to decide our direction of movement
+				print("**** changing dir");
 
-				if (!move){
-					int number = Random.Range (0, 3);
+				int number = Random.Range (0, 3);
+				//we move up
+				switch(number){
 					//we move up
-					switch(number){
-						//we move up
-						case 0:
-							direction = new Vector2(0,1);
-							orientation = DirectionEnumScript.Direction.NORTH;
-							break;
-						//we move down
-						case 1:
-							direction = new Vector2(0,-1);
-							orientation = DirectionEnumScript.Direction.SOUTH;
-							break;
-						//we move right
-						case 2:
-							direction = new Vector2(1,0);
-							orientation = DirectionEnumScript.Direction.EAST;
-							break;
-						//we move left
-						case  3:
-							direction = new Vector2(-1,0);
-							orientation = DirectionEnumScript.Direction.WEST;
-							break;
-						default:
-							direction = new Vector2(0,1);
-							orientation = DirectionEnumScript.Direction.NORTH;
-							break;
+					case 0:
+						direction = new Vector2(0,1);
+						orientation = DirectionEnumScript.Direction.NORTH;
+						break;
+					//we move down
+					case 1:
+						direction = new Vector2(0,-1);
+						orientation = DirectionEnumScript.Direction.SOUTH;
+						break;
+					//we move right
+					case 2:
+						direction = new Vector2(1,0);
+						orientation = DirectionEnumScript.Direction.EAST;
+						break;
+					//we move left
+					case  3:
+						direction = new Vector2(-1,0);
+						orientation = DirectionEnumScript.Direction.WEST;
+						break;
+					default:
+						direction = new Vector2(0,1);
+						orientation = DirectionEnumScript.Direction.NORTH;
+						break;
 
-					}
 				}
+
 
 				move = false;
 				counter = 0;

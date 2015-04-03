@@ -28,7 +28,7 @@ public class WeaponScript : MonoBehaviour {
 			}
 		}
 		//shooting key for player 1
-		if (Input.GetKeyDown (KeyCode.LeftControl) && this.gameObject.name == "Player 1") {
+		if (Input.GetKeyDown (KeyCode.LeftAlt) && this.gameObject.name == "Player 1") {
 			if(ammo > 0){
 				this.spawnBullet ();
 				this.ammo--;

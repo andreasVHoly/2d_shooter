@@ -1127,11 +1127,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 28.1170979
+      value: -8.56999969
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -5.94826841
+      value: 5.51000023
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1188,11 +1188,11 @@ Prefab:
     - target: {fileID: 11400004, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
       propertyPath: bar
       value: 
-      objectReference: {fileID: 2096739048}
+      objectReference: {fileID: 1627490911}
     - target: {fileID: 11400002, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
       propertyPath: ammoScript
       value: 
-      objectReference: {fileID: 225242746}
+      objectReference: {fileID: 1601514883}
     - target: {fileID: 11400004, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
       propertyPath: kills
       value: 
@@ -1200,22 +1200,27 @@ Prefab:
     - target: {fileID: 11400000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
       propertyPath: up
       value: 
-      objectReference: {fileID: 21300000, guid: 3de1fe0b25e19e7498d321f9cba55e49,
+      objectReference: {fileID: 21300000, guid: e3f4c5a37182ca743ba316058fb5b7bb,
         type: 3}
     - target: {fileID: 11400000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
       propertyPath: down
       value: 
-      objectReference: {fileID: 21300000, guid: 71e659d99285dc640947e283ddeff5df,
+      objectReference: {fileID: 21300000, guid: f393d22db1b365043be4d15e8ed77dc1,
         type: 3}
     - target: {fileID: 11400000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
       propertyPath: right
       value: 
-      objectReference: {fileID: 21300000, guid: d8047e5f1f6c47540994b84a27c17bae,
+      objectReference: {fileID: 21300000, guid: e675581caa7587840b048e12e6d03f2b,
         type: 3}
     - target: {fileID: 11400000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
       propertyPath: left
       value: 
-      objectReference: {fileID: 21300000, guid: f488472f4b3650c4883d88de209de85c,
+      objectReference: {fileID: 21300000, guid: 0266a824e484984439bb31c2e8064281,
+        type: 3}
+    - target: {fileID: 21200000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e3f4c5a37182ca743ba316058fb5b7bb,
         type: 3}
     m_RemovedComponents:
     - {fileID: 11400006, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
@@ -1264,11 +1269,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -8.38548565
+      value: 28.2099991
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.34989738
+      value: -6.03000021
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1321,11 +1326,11 @@ Prefab:
     - target: {fileID: 11400002, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
       propertyPath: bar
       value: 
-      objectReference: {fileID: 1627490911}
+      objectReference: {fileID: 2096739048}
     - target: {fileID: 11400004, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
       propertyPath: ammoScript
       value: 
-      objectReference: {fileID: 1601514883}
+      objectReference: {fileID: 225242746}
     - target: {fileID: 11400002, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
       propertyPath: kills
       value: 
@@ -1333,22 +1338,22 @@ Prefab:
     - target: {fileID: 11400000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
       propertyPath: up
       value: 
-      objectReference: {fileID: 21300000, guid: e3f4c5a37182ca743ba316058fb5b7bb,
+      objectReference: {fileID: 21300000, guid: 3de1fe0b25e19e7498d321f9cba55e49,
         type: 3}
     - target: {fileID: 11400000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
       propertyPath: down
       value: 
-      objectReference: {fileID: 21300000, guid: f393d22db1b365043be4d15e8ed77dc1,
+      objectReference: {fileID: 21300000, guid: 71e659d99285dc640947e283ddeff5df,
         type: 3}
     - target: {fileID: 11400000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
       propertyPath: left
       value: 
-      objectReference: {fileID: 21300000, guid: 0266a824e484984439bb31c2e8064281,
+      objectReference: {fileID: 21300000, guid: f488472f4b3650c4883d88de209de85c,
         type: 3}
     - target: {fileID: 11400000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
       propertyPath: right
       value: 
-      objectReference: {fileID: 21300000, guid: e675581caa7587840b048e12e6d03f2b,
+      objectReference: {fileID: 21300000, guid: d8047e5f1f6c47540994b84a27c17bae,
         type: 3}
     m_RemovedComponents:
     - {fileID: 21200000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
@@ -5362,7 +5367,7 @@ Transform:
   m_PrefabInternal: {fileID: 96661670}
   m_GameObject: {fileID: 436004971}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.38548565, y: 5.34989738, z: 0}
+  m_LocalPosition: {x: 28.2099991, y: -6.03000021, z: 0}
   m_LocalScale: {x: 1.01373982, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1276399259}
@@ -5381,10 +5386,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
   direction: 0
-  left: {fileID: 21300000, guid: 0266a824e484984439bb31c2e8064281, type: 3}
-  right: {fileID: 21300000, guid: e675581caa7587840b048e12e6d03f2b, type: 3}
-  up: {fileID: 21300000, guid: e3f4c5a37182ca743ba316058fb5b7bb, type: 3}
-  down: {fileID: 21300000, guid: f393d22db1b365043be4d15e8ed77dc1, type: 3}
+  left: {fileID: 21300000, guid: f488472f4b3650c4883d88de209de85c, type: 3}
+  right: {fileID: 21300000, guid: d8047e5f1f6c47540994b84a27c17bae, type: 3}
+  up: {fileID: 21300000, guid: 3de1fe0b25e19e7498d321f9cba55e49, type: 3}
+  down: {fileID: 21300000, guid: 71e659d99285dc640947e283ddeff5df, type: 3}
   colliding: 0
   collider_: {fileID: 0}
   blocked: 0
@@ -5408,7 +5413,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e3f4c5a37182ca743ba316058fb5b7bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3de1fe0b25e19e7498d321f9cba55e49, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!61 &436004975
 BoxCollider2D:
@@ -5453,7 +5458,7 @@ MonoBehaviour:
   health: 100
   isEnemy: 0
   scripts: {fileID: 530343660}
-  bar: {fileID: 1627490911}
+  bar: {fileID: 2096739048}
   kills: {fileID: 1205804564}
 --- !u!114 &436004978
 MonoBehaviour:
@@ -5469,7 +5474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: .25
   ammo: 100
-  ammoScript: {fileID: 1601514883}
+  ammoScript: {fileID: 225242746}
   bullet: {fileID: 400000, guid: b8547ddd28958c341ae9ebe6ff455ce4, type: 2}
 --- !u!1 &438660404
 GameObject:
@@ -8305,8 +8310,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 626694118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0826119184, y: .0220600311, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .0890000015, y: -.00400000019, z: 10}
+  m_LocalScale: {x: .756772041, y: .432467729, z: 1}
   m_Children: []
   m_Father: {fileID: 909704619}
   m_RootOrder: 0
@@ -16602,7 +16607,7 @@ Transform:
   m_PrefabInternal: {fileID: 92003552}
   m_GameObject: {fileID: 1386526076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.1170979, y: -5.94826841, z: 0}
+  m_LocalPosition: {x: -8.56999969, y: 5.51000023, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1276399259}
@@ -16621,7 +16626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: .25
   ammo: 100
-  ammoScript: {fileID: 225242746}
+  ammoScript: {fileID: 1601514883}
   bullet: {fileID: 400000, guid: b8547ddd28958c341ae9ebe6ff455ce4, type: 2}
 --- !u!114 &1386526079
 MonoBehaviour:
@@ -16637,10 +16642,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
   direction: 0
-  left: {fileID: 21300000, guid: f488472f4b3650c4883d88de209de85c, type: 3}
-  right: {fileID: 21300000, guid: d8047e5f1f6c47540994b84a27c17bae, type: 3}
-  up: {fileID: 21300000, guid: 3de1fe0b25e19e7498d321f9cba55e49, type: 3}
-  down: {fileID: 21300000, guid: 71e659d99285dc640947e283ddeff5df, type: 3}
+  left: {fileID: 21300000, guid: 0266a824e484984439bb31c2e8064281, type: 3}
+  right: {fileID: 21300000, guid: e675581caa7587840b048e12e6d03f2b, type: 3}
+  up: {fileID: 21300000, guid: e3f4c5a37182ca743ba316058fb5b7bb, type: 3}
+  down: {fileID: 21300000, guid: f393d22db1b365043be4d15e8ed77dc1, type: 3}
   colliding: 0
   collider_: {fileID: 0}
   blocked: 0
@@ -16665,7 +16670,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3de1fe0b25e19e7498d321f9cba55e49, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e3f4c5a37182ca743ba316058fb5b7bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!61 &1386526081
 BoxCollider2D:
@@ -16710,7 +16715,7 @@ MonoBehaviour:
   health: 100
   isEnemy: 0
   scripts: {fileID: 530343660}
-  bar: {fileID: 2096739048}
+  bar: {fileID: 1627490911}
   kills: {fileID: 1205804564}
 --- !u!1 &1405753385
 GameObject:

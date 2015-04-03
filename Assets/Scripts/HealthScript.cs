@@ -21,6 +21,10 @@ public class HealthScript : MonoBehaviour {
 		bool player1b = this.gameObject.name == "Player 1";
 		bool enemy1 = coll.gameObject.name == "Enemy";
 		bool enemy2 = this.gameObject.name == "Enemy";
+		bool box1 = coll.gameObject.name == "Box";
+		bool box2 = this.gameObject.name == "Box";
+		bool mBox1 = coll.gameObject.name == "Metal Box";
+		bool mBox2 = this.gameObject.name == "Metal Box";
 
 		//player is coll, enemy is this
 		if((player2a || player1a) && enemy2){
@@ -55,6 +59,20 @@ public class HealthScript : MonoBehaviour {
 				}
 				Destroy(this.gameObject);
 			}
+		}
+		else if(enemy1 && enemy2){
+			this.gameObject.GetComponent<EnemyMovementScript>().move = true;
+			coll.gameObject.GetComponent<EnemyMovementScript>().move = true;
+		}
+		//enemy1 is coll, box is this
+		else if (enemy1 && (mBox2 || box2)){
+			print("box " + coll.gameObject.GetComponent<EnemyMovementScript>());
+			coll.gameObject.GetComponent<EnemyMovementScript>().move = true;
+		}
+		//enemy is this, box is coll
+		else if (enemy2 && (mBox1 || box1)){
+			print("box2 " + this.gameObject.GetComponent<EnemyMovementScript>());
+			this.gameObject.GetComponent<EnemyMovementScript>().move = true;
 		}
 
 	}
