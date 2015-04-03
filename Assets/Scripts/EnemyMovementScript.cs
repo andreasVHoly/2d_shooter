@@ -115,7 +115,7 @@ public class EnemyMovementScript : MonoBehaviour {
 			//if we have moved for 120ms(2s)
 			if (counter > 120 || move) {
 				//we get a random number to decide our direction of movement
-				print("**** changing dir");
+				//print("**** changing dir");
 
 				int number = Random.Range (0, 3);
 				//we move up

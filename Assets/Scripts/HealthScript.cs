@@ -66,12 +66,12 @@ public class HealthScript : MonoBehaviour {
 		}
 		//enemy1 is coll, box is this
 		else if (enemy1 && (mBox2 || box2)){
-			print("box " + coll.gameObject.GetComponent<EnemyMovementScript>());
+			//print("box " + coll.gameObject.GetComponent<EnemyMovementScript>());
 			coll.gameObject.GetComponent<EnemyMovementScript>().move = true;
 		}
 		//enemy is this, box is coll
 		else if (enemy2 && (mBox1 || box1)){
-			print("box2 " + this.gameObject.GetComponent<EnemyMovementScript>());
+			//print("box2 " + this.gameObject.GetComponent<EnemyMovementScript>());
 			this.gameObject.GetComponent<EnemyMovementScript>().move = true;
 		}
 
