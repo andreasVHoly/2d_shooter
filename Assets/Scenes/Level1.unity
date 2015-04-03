@@ -7084,6 +7084,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3697bde99b52fb3498ef4897e96bf3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sWidth: 0
+  sHeight: 0
+  startX: 0
+  startY: 0
+  width: 0
+  height: 0
   buttonSkin: {fileID: 11400000, guid: 78275c1a84e52d44cbf91db0d4b34829, type: 2}
 --- !u!1 &533699679
 GameObject:
