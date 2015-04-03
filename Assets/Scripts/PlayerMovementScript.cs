@@ -15,7 +15,7 @@ public class PlayerMovementScript : MonoBehaviour {
 	public Sprite up;
 	public Sprite down;
 
-	SpriteRenderer srender;
+	private SpriteRenderer srender;
 
 
 	void Start(){

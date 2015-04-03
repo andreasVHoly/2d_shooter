@@ -24,8 +24,17 @@ public class EnemyMovementScript : MonoBehaviour {
 
 	private GameObject prey;
 
+	public Sprite left;
+	public Sprite right;
+	public Sprite up;
+	public Sprite down;
+	private SpriteRenderer srender;
+	
 	public bool move = false;
 
+	void Start(){
+		srender = this.gameObject.GetComponent<SpriteRenderer>();
+	}
 
 
 	// Update is called once per frame
@@ -78,7 +87,6 @@ public class EnemyMovementScript : MonoBehaviour {
 					//move down
 					direction.y = -1;
 					orientation = DirectionEnumScript.Direction.SOUTH;
-					//print("hunter down");
 					
 				}
 				else{
@@ -143,9 +151,31 @@ public class EnemyMovementScript : MonoBehaviour {
 				move = false;
 				counter = 0;
 			}
-			// a new vector to devcide our 
+
 
 		}
+
+		if(orientation == DirectionEnumScript.Direction.NORTH){
+			if(srender.sprite != up){
+				srender.sprite = up;
+			}
+		}
+		else if (orientation == DirectionEnumScript.Direction.SOUTH){
+			if(srender.sprite != down){
+				srender.sprite = down;
+			}
+		}
+		else if (orientation == DirectionEnumScript.Direction.EAST){
+			if(srender.sprite != right){
+				srender.sprite = right;
+			}
+		}
+		else if (orientation == DirectionEnumScript.Direction.WEST) {
+			if(srender.sprite != left){
+				srender.sprite = left;
+			}
+		}
+
 		Vector3 movement = new Vector3 (speed.x * direction.x, speed.y * direction.y, 0);
 		
 		movement *= Time.deltaTime;
