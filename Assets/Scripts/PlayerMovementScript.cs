@@ -17,6 +17,9 @@ public class PlayerMovementScript : MonoBehaviour {
 
 	private SpriteRenderer srender;
 
+	public bool colliding;
+	public Collider2D collider_;
+	public DirectionEnumScript.Direction blocked;
 
 	void Start(){
 		direction = DirectionEnumScript.Direction.NORTH;
@@ -36,7 +39,6 @@ public class PlayerMovementScript : MonoBehaviour {
 			//we get the input on the y axis, i.e. what direction we are moving on, VerticalP1 is set up to be for player 1
 			inputY = Input.GetAxis ("VerticalP1");
 		}
-		//shooting key for player 1
 		else if (this.gameObject.name == "Player 2") {
 			//we get the input on the x axis, i.e. what direction we are moving on, HorizontalP1 is set up to be for player 1
 			inputX = Input.GetAxis ("HorizontalP2");
@@ -46,25 +48,25 @@ public class PlayerMovementScript : MonoBehaviour {
 
 
 
-		if(inputX > 0){
+		if(inputX > 0 && blocked != DirectionEnumScript.Direction.EAST){
 			direction = DirectionEnumScript.Direction.EAST;
 			if(srender.sprite != right){
 				srender.sprite = right;
 			}
 		}
-		else if (inputX < 0){
+		else if (inputX < 0 && blocked != DirectionEnumScript.Direction.WEST){
 			direction = DirectionEnumScript.Direction.WEST;
 			if(srender.sprite != left){
 				srender.sprite = left;
 			}
 		}
-		else if(inputY > 0){
+		else if(inputY > 0 && blocked != DirectionEnumScript.Direction.NORTH){
 			direction = DirectionEnumScript.Direction.NORTH;
 			if(srender.sprite != up){
 				srender.sprite = up;
 			}
 		}
-		else if (inputY < 0){
+		else if (inputY < 0 && blocked != DirectionEnumScript.Direction.SOUTH){
 			direction = DirectionEnumScript.Direction.SOUTH;
 			if(srender.sprite != down){
 				srender.sprite = down;
@@ -72,13 +74,34 @@ public class PlayerMovementScript : MonoBehaviour {
 		}
 
 
-		//we make a new vector for the movement of where our object should be in relation to the input, and its new position it will attain by moving with its speed
-		Vector3 movement = new Vector3 (speed.x * inputX, speed.y * inputY, 0);
+		//if (!colliding){//we make a new vector for the movement of where our object should be in relation to the input, and its new position it will attain by moving with its speed
 
-		//we need to change this new position with repect to delta time
-		movement *= Time.deltaTime;
-		//we update the objects position accordinly
-		transform.Translate (movement);
+			Vector3 movement = new Vector3 (speed.x * inputX, speed.y * inputY, 0);
+
+			//we need to change this new position with repect to delta time
+			movement *= Time.deltaTime;
+			//we update the objects position accordinly
+			transform.Translate (movement);
+			
+
+		/*}
+		else{
+			if (direction == DirectionEnumScript.Direction.NORTH){
+				blocked = DirectionEnumScript.Direction.NORTH;
+
+			}
+			else if (direction == DirectionEnumScript.Direction.SOUTH){
+				blocked = DirectionEnumScript.Direction.SOUTH;
+			}
+			else if (direction == DirectionEnumScript.Direction.EAST){
+				blocked = DirectionEnumScript.Direction.EAST;
+			}
+			else if (direction == DirectionEnumScript.Direction.WEST){
+				blocked = DirectionEnumScript.Direction.WEST;
+			}
+			//var dir = transform.InverseTransformPoint(collider_.contacts[0])
+			colliding = false;
+		}*/
 		   
 	}
 }

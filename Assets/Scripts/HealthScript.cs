@@ -14,6 +14,51 @@ public class HealthScript : MonoBehaviour {
 
 	public KillCountScript kills;
 
+	void OnCollisionEnter2D(Collision2D coll){
+		bool player2a = coll.gameObject.name == "Player 2";
+		bool player2b = this.gameObject.name == "Player 2";
+		bool player1a = coll.gameObject.name == "Player 1";
+		bool player1b = this.gameObject.name == "Player 1";
+		bool enemy1 = coll.gameObject.name == "Enemy";
+		bool enemy2 = this.gameObject.name == "Enemy";
+
+		//player is coll, enemy is this
+		if((player2a || player1a) && enemy2){
+			HealthScript script = coll.gameObject.GetComponent<HealthScript>();
+			script.health -= this.gameObject.GetComponent<EnemyMovementScript>().damage;
+			script.bar.amount = (float)(script.health/100.0);
+			if (script.health <= 0){
+				if (script.gameObject.name == "Player 1"){
+					script.scripts.GetComponent<LevelLoaderScript>().player1Dead = true;
+				}
+				else if(script.gameObject.name == "Player 2"){
+					script.scripts.GetComponent<LevelLoaderScript>().player2Dead = true;
+				}
+				Destroy(script.gameObject);
+			}
+			Destroy(this.gameObject);
+		}
+		//player is this, enemy is coll
+		else if((player2b || player1b) && enemy1){
+
+			this.health -= coll.gameObject.GetComponent<EnemyMovementScript>().damage;
+			this.bar.amount = (float)(health/100.0);
+			//print(health/100);
+			//print("health deducted");
+			Destroy(coll.gameObject);
+			if (health <= 0){
+				if (this.gameObject.name == "Player 1"){
+					scripts.GetComponent<LevelLoaderScript>().player1Dead = true;
+				}
+				else{
+					scripts.GetComponent<LevelLoaderScript>().player2Dead = true;
+				}
+				Destroy(this.gameObject);
+			}
+		}
+
+	}
+
 
 	//we want to hande collisions manually in order to reduce health
 	void OnTriggerEnter2D(Collider2D collider){
@@ -64,9 +109,9 @@ public class HealthScript : MonoBehaviour {
 				Destroy(this.gameObject);
 			}
 		}
-		else if(collider.name == "Enemy" && (this.gameObject.name == "Metal Box" || this.gameObject.name == "Box")){
+		else if((collider.name == "Player 1" || collider.name == "Player 2") && (this.gameObject.name == "Metal Box" || this.gameObject.name == "Box")){
 
-			EnemyMovementScript enemy = collider.gameObject.GetComponent<EnemyMovementScript>();
+			/*EnemyMovementScript enemy = collider.gameObject.GetComponent<EnemyMovementScript>();
 			DirectionEnumScript.Direction dir = DirectionEnumScript.getOpposite(enemy.orientation);
 			if (dir == DirectionEnumScript.Direction.NORTH){
 				enemy.direction = new Vector2(0,1);
@@ -74,17 +119,19 @@ public class HealthScript : MonoBehaviour {
 			else if (dir == DirectionEnumScript.Direction.SOUTH){
 				enemy.direction = new Vector2(0,-1);
 			}
-		else if (dir == DirectionEnumScript.Direction.EAST){
+			else if (dir == DirectionEnumScript.Direction.EAST){
 				enemy.direction = new Vector2(1,0);
 			}
 			else {
 				enemy.direction = new Vector2(-1,0);
-			}
+			}*/
+			collider.gameObject.GetComponent<PlayerMovementScript>().colliding = true;
+			collider.gameObject.GetComponent<PlayerMovementScript>().collider_ = collider;
 		}
-		else if(collider.name == "Enemy" &&  this.gameObject.name == "Enemy"){
+		/*else if(collider.name == "Enemy" &&  this.gameObject.name == "Enemy"){
 			collider.gameObject.GetComponent<EnemyMovementScript>().move = true;
 			this.gameObject.GetComponent<EnemyMovementScript>().move = true;
-		}
+		}*/
 
 		else if (collider.name == "AmmoPack"){
 			this.gameObject.GetComponent<WeaponScript>().ammo = 260;
