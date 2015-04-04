@@ -104,7 +104,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonSkin: {fileID: 11400000, guid: 78275c1a84e52d44cbf91db0d4b34829, type: 2}
   textSkin: {fileID: 11400000, guid: 21f30a4f14fbb654f92d43fe46d7d307, type: 2}
-  sound: {fileID: 1396092162}
 --- !u!4 &1396092161
 Transform:
   m_ObjectHideFlags: 0
@@ -136,6 +135,30 @@ MonoBehaviour:
   shot: {fileID: 8300000, guid: 9c6d5a4c452dd1946bef19fd29287a40, type: 3}
   step: {fileID: 8300000, guid: 4763c58708f13bc458ff5b92318118a8, type: 3}
   gameOver: {fileID: 8300000, guid: 523fd10ce3791eb419a6bf8707d78939, type: 3}
+  zombie0: {fileID: 0}
+  zombie1: {fileID: 0}
+  zombie2: {fileID: 0}
+  zombie3: {fileID: 0}
+  zombie4: {fileID: 0}
+  zombie5: {fileID: 0}
+  zombie6: {fileID: 0}
+  zombie7: {fileID: 0}
+  zombie8: {fileID: 0}
+  zombie9: {fileID: 0}
+  zombie10: {fileID: 0}
+  zombie11: {fileID: 0}
+  zombie12: {fileID: 0}
+  zombie13: {fileID: 0}
+  zombie14: {fileID: 0}
+  zombie15: {fileID: 0}
+  zombie16: {fileID: 0}
+  zombie17: {fileID: 0}
+  zombie18: {fileID: 0}
+  zombie19: {fileID: 0}
+  zombie20: {fileID: 0}
+  zombie21: {fileID: 0}
+  zombie22: {fileID: 0}
+  zombie23: {fileID: 0}
 --- !u!1 &1659637932
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,25 +20,25 @@ public class GameWonScreenScript : MonoBehaviour {
 		sHeight = Screen.width;
 		width = (float)(sWidth/4);
 		height = (float)(sHeight*0.1);
-		startY = (float)(sHeight/4);
+		startY = (float)(sHeight/4)-100;
 		startX = (float)(sWidth/2 - width/2);
 	}
 	
 	void OnGUI(){
 		GUI.skin = buttonSkin;
-		if(GUI.Button(new Rect(startX,startY-180,width,height),"Replay")){
+		if(GUI.Button(new Rect(startX-width-20,startY,width,height),"Replay")){
 			Application.LoadLevel("Level1");
 		}
-		if(GUI.Button(new Rect(startX,startY-20,width,height),"Main Menu")){
+		if(GUI.Button(new Rect(startX,startY,width,height),"Main Menu")){
 			Application.LoadLevel("MainMenu");
 		}
-		if(GUI.Button(new Rect(startX,startY+130,width,height),"Exit")){
+		if(GUI.Button(new Rect(startX + width+20,startY,width,height),"Exit")){
 			Application.Quit();
 		}
 		
 		
 		GUI.skin = textSkin;
 		GUI.Label(new Rect(sWidth/2-700/2,30,700, 300),"Well Done!");
-		
+		GUI.Label(new Rect(sWidth/2-800/2,400,800, 300),"Kill Count: " + PlayerPrefs.GetInt("Score"));
 	}
 }

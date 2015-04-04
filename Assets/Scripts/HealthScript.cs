@@ -15,19 +15,21 @@ public class HealthScript : MonoBehaviour {
 	public KillCountScript kills;
 	
 	private SoundScript sound;
-	
+
 
 	public void takeDamage(GameObject entity, int amount){
 		HealthScript script = entity.gameObject.GetComponent<HealthScript>();
 		script.health -= amount;
 		script.bar.amount = (float)(script.health/100.0);
 		if (script.health <= 0){
+			sound.playDeathSound();
+			PlayerPrefs.DeleteKey("Score");
+			PlayerPrefs.SetInt("Score",kills.amount);
+			PlayerPrefs.Save();
 			if (script.gameObject.name == "Player 1"){
-				sound.playDeathSound();
 				script.scripts.GetComponent<LevelLoaderScript>().player1Dead = true;
 			}
 			else if(script.gameObject.name == "Player 2"){
-				sound.playDeathSound();
 				script.scripts.GetComponent<LevelLoaderScript>().player2Dead = true;
 			}
 			Destroy(script.gameObject);
@@ -65,20 +67,7 @@ public class HealthScript : MonoBehaviour {
 			sound.playPainSound();
 			int amount = coll.gameObject.GetComponent<EnemyMovementScript>().damage;
 			takeDamage(this.gameObject,amount);
-			//print(health/100);
-			//print("health deducted");
 			Destroy(coll.gameObject);
-			/*if (health <= 0){
-				if (this.gameObject.name == "Player 1"){
-					sound.playDeathSound();
-					scripts.GetComponent<LevelLoaderScript>().player1Dead = true;
-				}
-				else{
-					sound.playDeathSound();
-					scripts.GetComponent<LevelLoaderScript>().player2Dead = true;
-				}
-				Destroy(this.gameObject);
-			}*/
 		}
 		else if(enemy1 && enemy2){
 			this.gameObject.GetComponent<EnemyMovementScript>().move = true;
@@ -178,10 +167,30 @@ public class HealthScript : MonoBehaviour {
 			if(this.gameObject.name == "Player 1"){
 				scripts.GetComponent<LevelLoaderScript>().player1 = true;
 				sound.playTeleportSound();
+				this.gameObject.SetActive(false);
+				PlayerPrefs.DeleteKey("P1 health");
+				PlayerPrefs.DeleteKey("P1 ammo");
+				PlayerPrefs.DeleteKey("Score");
+				PlayerPrefs.SetInt("P1 health",health);
+				PlayerPrefs.SetInt("P1 ammo",this.gameObject.GetComponent<WeaponScript>().ammo);
+				PlayerPrefs.SetInt("Score",kills.amount);
+				PlayerPrefs.Save();
 			}
 			else if(this.gameObject.name == "Player 2"){
 				scripts.GetComponent<LevelLoaderScript>().player2 = true;
+				this.gameObject.SetActive(false);
 				sound.playTeleportSound();
+				PlayerPrefs.DeleteKey("P2 health");
+				PlayerPrefs.DeleteKey("P2 ammo");
+				PlayerPrefs.DeleteKey("Score");
+				PlayerPrefs.SetInt("P2 health",health);
+				PlayerPrefs.SetInt("P2 ammo",this.gameObject.GetComponent<WeaponScript>().ammo);
+				PlayerPrefs.SetInt("Score",kills.amount);
+				PlayerPrefs.Save();
+				
+
+				
+
 			}
 		}
 
