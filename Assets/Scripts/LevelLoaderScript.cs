@@ -8,9 +8,11 @@ public class LevelLoaderScript : MonoBehaviour {
 	public bool player1Dead =  false;
 	public bool player2Dead = false;
 
+	public GUISkin buttonSkin;
+
 	public GameObject scripts;
 
-	public SoundScript sound;
+	private SoundScript sound;
 
 	void Start(){
 		sound = scripts.GetComponent<SoundScript>();
@@ -34,6 +36,16 @@ public class LevelLoaderScript : MonoBehaviour {
 		Application.LoadLevel(levelName);
 	}
 
+
+	void OnGUI(){
+		
+		GUI.skin = buttonSkin;
+		if(GUI.Button(new Rect(Screen.width-100, 0, 100,50 ),"Exit")){
+			Application.LoadLevel("MainMenu");
+		}
+	
+		
+	}
 
 
 }

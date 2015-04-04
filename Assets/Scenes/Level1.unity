@@ -6150,12 +6150,14 @@ MonoBehaviour:
   orientation: 0
   detectionRange: 30
   chasingRange: 6.5
+  prey: {fileID: 0}
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
   scripts: {fileID: 530343660}
   move: 0
+  overRide: 0
 --- !u!212 &474492832
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7176,8 +7178,8 @@ MonoBehaviour:
   player2: 0
   player1Dead: 0
   player2Dead: 0
+  buttonSkin: {fileID: 11400000, guid: 8be30fccd26109749a9f0a45fc1fab82, type: 2}
   scripts: {fileID: 530343660}
-  sound: {fileID: 0}
 --- !u!114 &530343663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10347,12 +10349,14 @@ MonoBehaviour:
   orientation: 0
   detectionRange: 30
   chasingRange: 6.5
+  prey: {fileID: 0}
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
   scripts: {fileID: 530343660}
   move: 0
+  overRide: 0
 --- !u!212 &795194510
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13026,12 +13030,14 @@ MonoBehaviour:
   orientation: 0
   detectionRange: 30
   chasingRange: 6.5
+  prey: {fileID: 0}
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
   scripts: {fileID: 530343660}
   move: 0
+  overRide: 0
 --- !u!212 &1046562086
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13879,12 +13885,14 @@ MonoBehaviour:
   orientation: 0
   detectionRange: 30
   chasingRange: 6.5
+  prey: {fileID: 0}
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
   scripts: {fileID: 530343660}
   move: 0
+  overRide: 0
 --- !u!212 &1119599467
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17034,12 +17042,14 @@ MonoBehaviour:
   orientation: 0
   detectionRange: 30
   chasingRange: 6.5
+  prey: {fileID: 0}
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
   scripts: {fileID: 530343660}
   move: 0
+  overRide: 0
 --- !u!212 &1406687673
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17654,12 +17664,14 @@ MonoBehaviour:
   orientation: 0
   detectionRange: 30
   chasingRange: 6.5
+  prey: {fileID: 0}
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
   scripts: {fileID: 530343660}
   move: 0
+  overRide: 0
 --- !u!212 &1442610978
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18198,12 +18210,14 @@ MonoBehaviour:
   orientation: 0
   detectionRange: 30
   chasingRange: 6.5
+  prey: {fileID: 0}
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
   scripts: {fileID: 530343660}
   move: 0
+  overRide: 0
 --- !u!212 &1511945397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20137,12 +20151,14 @@ MonoBehaviour:
   orientation: 0
   detectionRange: 30
   chasingRange: 6.5
+  prey: {fileID: 0}
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
   scripts: {fileID: 530343660}
   move: 0
+  overRide: 0
 --- !u!212 &1642127498
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21144,12 +21160,14 @@ MonoBehaviour:
   orientation: 0
   detectionRange: 30
   chasingRange: 6.5
+  prey: {fileID: 0}
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
   scripts: {fileID: 530343660}
   move: 0
+  overRide: 0
 --- !u!212 &1709887133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23991,12 +24009,14 @@ MonoBehaviour:
   orientation: 0
   detectionRange: 30
   chasingRange: 6.5
+  prey: {fileID: 0}
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
   scripts: {fileID: 530343660}
   move: 0
+  overRide: 0
 --- !u!212 &1915667491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26211,12 +26231,14 @@ MonoBehaviour:
   orientation: 0
   detectionRange: 30
   chasingRange: 6.5
+  prey: {fileID: 0}
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
   scripts: {fileID: 530343660}
   move: 0
+  overRide: 0
 --- !u!212 &2051671175
 SpriteRenderer:
   m_ObjectHideFlags: 0

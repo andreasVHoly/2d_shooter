@@ -100,9 +100,16 @@ public class HealthScript : MonoBehaviour {
 				//we deduct the amount of damage the bullet does
 				health -= entity.damage;
 
+
+				EnemyMovementScript enemy = this.gameObject.GetComponent<EnemyMovementScript>();
+				if (enemy != null){
+					enemy.chasing = true;
+					enemy.prey = entity.parent;
+					enemy.overRide = true;
+				}
+
 				//we destroy the bullet as it has had an impact
 				Destroy(entity.gameObject);
-
 
 
 				//if this object has no health anymore, we destroy it as it is dead

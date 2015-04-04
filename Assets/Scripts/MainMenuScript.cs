@@ -26,7 +26,7 @@ public class MainMenuScript : MonoBehaviour {
 
 	void OnGUI(){
 		GUI.skin = buttonSkin;
-		if(GUI.Button(new Rect(0,startY-height/2,width-50,height),"New Game")){
+		if(GUI.Button(new Rect(10,startY-height/2,width-50,height),"New Game")){
 			Application.LoadLevel("Level1");
 		}
 		if(GUI.Button(new Rect(width*1,startY-height/2,width-50,height),"How To Play")){

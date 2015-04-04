@@ -49,6 +49,8 @@ public class WeaponScript : MonoBehaviour {
 		//we make a new bullet
 		var shot = Instantiate(bullet) as Transform;
 
+		shot.GetComponent<BulletScript>().parent = this.gameObject;
+
 		//we get the current objects direction
 		DirectionEnumScript.Direction dir =  this.gameObject.GetComponent<PlayerMovementScript>().direction;
 

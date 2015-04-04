@@ -22,7 +22,7 @@ public class EnemyMovementScript : MonoBehaviour {
 
 	private GameObject player2;
 
-	private GameObject prey;
+	public GameObject prey;
 
 	public Sprite left;
 	public Sprite right;
@@ -37,6 +37,8 @@ public class EnemyMovementScript : MonoBehaviour {
 	
 	public bool move = false;
 
+	public bool overRide = false;
+
 	void Start(){
 		sound = scripts.GetComponent<SoundScript>();
 		travelDistance = 120;
@@ -49,7 +51,7 @@ public class EnemyMovementScript : MonoBehaviour {
 
 
 		var rayCast = Physics2D.Raycast(this.transform.position, direction, detectionRange, 1 << LayerMask.NameToLayer("Player"));
-		Debug.DrawRay(transform.position, new Vector3(direction.x,direction.y,0), Color.red);
+		//Debug.DrawRay(transform.position, new Vector3(direction.x,direction.y,0), Color.red);
 		if (chasing){
 			sound.playZombieSound();
 			if (prey == null){
@@ -57,7 +59,7 @@ public class EnemyMovementScript : MonoBehaviour {
 				return;
 			}
 			float gap = Vector3.Distance(this.transform.position, prey.transform.position);
-			if (gap < chasingRange){
+			if (gap < chasingRange || overRide){
 				//print("chasing " + gap);
 				Vector3 target = prey.transform.position;
 				Vector3 hunter = this.transform.position;
