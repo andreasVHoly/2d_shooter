@@ -22,6 +22,8 @@ public class HealthScript : MonoBehaviour {
 	public HealthBarScript bar;
 	//the script to updated the kill counter ui 
 	public KillCountScript kills;
+	//transform for our blood puddle that we spawn after the object dies
+	public Transform puddle;
 
 	//used to increase/decrease the health of an obeject and to manage the ui afterwards
 	public void takeDamage(GameObject entity, int amount){
@@ -40,6 +42,12 @@ public class HealthScript : MonoBehaviour {
 			else if(script.gameObject.name == "Player 2"){//if player 2
 				script.scripts.GetComponent<LevelLoaderScript>().player2Dead = true;//we set player 2's state to dead
 			}
+			//we create a new puddle 
+			var blood = Instantiate(puddle) as Transform;
+			//we set the position of the puddle to the objects position so it is left behind 
+			//we set a new z value so the blood does not stand higher than our characters
+			Vector3 pos = script.gameObject.transform.position;
+			blood.transform.position = new Vector3(pos.x,pos.y,7);
 			Destroy(script.gameObject);//we destroy the object
 		}
 	}
@@ -109,6 +117,12 @@ public class HealthScript : MonoBehaviour {
 					if(this.gameObject.name == "Enemy"){//if it is an enemy, we add to the games kill counter
 						kills.amount += 1;
 						sound.playZombieSound();//we play a zombie sound
+						//we create a new puddle 
+						var blood = Instantiate(puddle) as Transform;
+						//we set the position of the puddle to the objects position so it is left behind 
+						//we set a new z value so the blood does not stand higher than our characters
+						Vector3 pos = gameObject.transform.position;
+						blood.transform.position = new Vector3(pos.x,pos.y,7);
 					}
 					Destroy (gameObject);//we destroy the zombie
 				}
