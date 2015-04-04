@@ -10,6 +10,8 @@ public class LevelLoaderScript : MonoBehaviour {
 
 	public GameObject scripts;
 
+	public SoundScript sound;
+
 
 
 	void Update(){
@@ -18,6 +20,7 @@ public class LevelLoaderScript : MonoBehaviour {
 		}
 		if (player1Dead && player2Dead){
 			//print("should be loading next level");
+			sound.playGameOverSound();
 			Application.LoadLevel("GameOver");
 		}
 

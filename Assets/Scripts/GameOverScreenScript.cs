@@ -12,8 +12,8 @@ public class GameOverScreenScript : MonoBehaviour {
 	private float startY;
 	private float width;
 	private float height;
-	
-	
+
+
 	
 	void Start(){
 		sWidth = Screen.width;

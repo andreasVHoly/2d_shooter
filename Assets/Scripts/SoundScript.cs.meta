@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 94958bd60c318054d85d7773e7389d4b
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - ammo: {fileID: 8300000, guid: 4757edf3683f210468468cdcb3ada1bd, type: 3}
+  - health: {fileID: 8300000, guid: e4746abdd878d9743b521e8adfab78af, type: 3}
+  - teleport: {fileID: 8300000, guid: 105f043b74935ca49be32443f32e5cc8, type: 3}
+  - death: {fileID: 8300000, guid: b4853a241abcda14da14b735afeef87b, type: 3}
+  - pain: {fileID: 8300000, guid: 69bd7d1041a429746808aa190137bcd6, type: 3}
+  - shot: {fileID: 8300000, guid: 9c6d5a4c452dd1946bef19fd29287a40, type: 3}
+  - step: {fileID: 8300000, guid: 4763c58708f13bc458ff5b92318118a8, type: 3}
+  - gameOver: {fileID: 8300000, guid: 523fd10ce3791eb419a6bf8707d78939, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

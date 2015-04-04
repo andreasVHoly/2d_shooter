@@ -29,10 +29,12 @@ public class EnemyMovementScript : MonoBehaviour {
 	public Sprite up;
 	public Sprite down;
 	private SpriteRenderer srender;
+	private int travelDistance;
 	
 	public bool move = false;
 
 	void Start(){
+		travelDistance = 120;
 		srender = this.gameObject.GetComponent<SpriteRenderer>();
 	}
 
@@ -113,11 +115,12 @@ public class EnemyMovementScript : MonoBehaviour {
 			counter++;
 			chasing = false;
 			//if we have moved for 120ms(2s)
-			if (counter > 120 || move) {
+			if (counter > travelDistance || move) {
 				//we get a random number to decide our direction of movement
 				//print("**** changing dir");
 
 				int number = Random.Range (0, 3);
+				travelDistance = Random.Range(120,1200);
 				//we move up
 				switch(number){
 					//we move up

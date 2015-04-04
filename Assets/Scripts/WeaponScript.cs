@@ -16,6 +16,13 @@ public class WeaponScript : MonoBehaviour {
 	//a transform for our new bullet to be spawned
 	public Transform bullet;
 
+	public GameObject scripts;
+	private SoundScript sound ;
+
+
+	void Start(){
+		sound = scripts.GetComponent<SoundScript>();
+	}
 
 	// Update is called once per frame
 	void Update () {
@@ -86,7 +93,8 @@ public class WeaponScript : MonoBehaviour {
 
 			bulletMovement.setDirection(dir);
 		}
-		//we set the position to the position of the current game object
+
+		sound.playShotSound();	
 
 	}
 

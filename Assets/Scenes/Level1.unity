@@ -1222,6 +1222,26 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: e3f4c5a37182ca743ba316058fb5b7bb,
         type: 3}
+    - target: {fileID: 11400004, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 530343663}
+    - target: {fileID: 11400002, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 530343663}
+    - target: {fileID: 11400000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 530343663}
+    - target: {fileID: 11400000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
+      propertyPath: scripts
+      value: 
+      objectReference: {fileID: 530343660}
+    - target: {fileID: 11400002, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
+      propertyPath: scripts
+      value: 
+      objectReference: {fileID: 530343660}
     m_RemovedComponents:
     - {fileID: 11400006, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
     - {fileID: 11400008, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
@@ -1355,6 +1375,30 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: d8047e5f1f6c47540994b84a27c17bae,
         type: 3}
+    - target: {fileID: 11400000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 530343663}
+    - target: {fileID: 11400004, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 530343663}
+    - target: {fileID: 11400002, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 530343663}
+    - target: {fileID: 11400004, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
+      propertyPath: scripts
+      value: 
+      objectReference: {fileID: 530343660}
+    - target: {fileID: 11400000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
+      propertyPath: scripts
+      value: 
+      objectReference: {fileID: 530343660}
+    - target: {fileID: 11400004, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 400000, guid: b8547ddd28958c341ae9ebe6ff455ce4, type: 2}
     m_RemovedComponents:
     - {fileID: 21200000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
     - {fileID: 11400008, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
@@ -5390,9 +5434,7 @@ MonoBehaviour:
   right: {fileID: 21300000, guid: d8047e5f1f6c47540994b84a27c17bae, type: 3}
   up: {fileID: 21300000, guid: 3de1fe0b25e19e7498d321f9cba55e49, type: 3}
   down: {fileID: 21300000, guid: 71e659d99285dc640947e283ddeff5df, type: 3}
-  colliding: 0
-  collider_: {fileID: 0}
-  blocked: 0
+  scripts: {fileID: 530343660}
 --- !u!212 &436004974
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5476,6 +5518,7 @@ MonoBehaviour:
   ammo: 100
   ammoScript: {fileID: 225242746}
   bullet: {fileID: 400000, guid: b8547ddd28958c341ae9ebe6ff455ce4, type: 2}
+  scripts: {fileID: 530343660}
 --- !u!1 &438660404
 GameObject:
   m_ObjectHideFlags: 0
@@ -7037,6 +7080,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 530343661}
   - 114: {fileID: 530343662}
+  - 114: {fileID: 530343663}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -7072,6 +7116,26 @@ MonoBehaviour:
   player1Dead: 0
   player2Dead: 0
   scripts: {fileID: 530343660}
+  sound: {fileID: 0}
+--- !u!114 &530343663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 530343660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94958bd60c318054d85d7773e7389d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo: {fileID: 8300000, guid: 4757edf3683f210468468cdcb3ada1bd, type: 3}
+  health: {fileID: 8300000, guid: e4746abdd878d9743b521e8adfab78af, type: 3}
+  teleport: {fileID: 8300000, guid: 105f043b74935ca49be32443f32e5cc8, type: 3}
+  death: {fileID: 8300000, guid: b4853a241abcda14da14b735afeef87b, type: 3}
+  pain: {fileID: 8300000, guid: 69bd7d1041a429746808aa190137bcd6, type: 3}
+  shot: {fileID: 8300000, guid: 9c6d5a4c452dd1946bef19fd29287a40, type: 3}
+  step: {fileID: 8300000, guid: 4763c58708f13bc458ff5b92318118a8, type: 3}
+  gameOver: {fileID: 8300000, guid: 523fd10ce3791eb419a6bf8707d78939, type: 3}
 --- !u!1 &533699679
 GameObject:
   m_ObjectHideFlags: 0
@@ -16615,6 +16679,7 @@ MonoBehaviour:
   ammo: 100
   ammoScript: {fileID: 1601514883}
   bullet: {fileID: 400000, guid: b8547ddd28958c341ae9ebe6ff455ce4, type: 2}
+  scripts: {fileID: 530343660}
 --- !u!114 &1386526079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16633,9 +16698,7 @@ MonoBehaviour:
   right: {fileID: 21300000, guid: e675581caa7587840b048e12e6d03f2b, type: 3}
   up: {fileID: 21300000, guid: e3f4c5a37182ca743ba316058fb5b7bb, type: 3}
   down: {fileID: 21300000, guid: f393d22db1b365043be4d15e8ed77dc1, type: 3}
-  colliding: 0
-  collider_: {fileID: 0}
-  blocked: 0
+  scripts: {fileID: 530343660}
 --- !u!212 &1386526080
 SpriteRenderer:
   m_ObjectHideFlags: 0

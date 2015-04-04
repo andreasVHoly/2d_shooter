@@ -13,8 +13,31 @@ public class HealthScript : MonoBehaviour {
 	public HealthBarScript bar;
 
 	public KillCountScript kills;
+	
+	private SoundScript sound;
+	
+
+	public void takeDamage(GameObject entity, int amount){
+		HealthScript script = entity.gameObject.GetComponent<HealthScript>();
+		script.health -= amount;
+		script.bar.amount = (float)(script.health/100.0);
+		if (script.health <= 0){
+			if (script.gameObject.name == "Player 1"){
+				sound.playDeathSound();
+				script.scripts.GetComponent<LevelLoaderScript>().player1Dead = true;
+			}
+			else if(script.gameObject.name == "Player 2"){
+				sound.playDeathSound();
+				script.scripts.GetComponent<LevelLoaderScript>().player2Dead = true;
+			}
+			Destroy(script.gameObject);
+		}
+	}
 
 	void OnCollisionEnter2D(Collision2D coll){
+		if(scripts != null){
+			sound = scripts.GetComponent<SoundScript>();
+		}
 		bool player2a = coll.gameObject.name == "Player 2";
 		bool player2b = this.gameObject.name == "Player 2";
 		bool player1a = coll.gameObject.name == "Player 1";
@@ -28,37 +51,34 @@ public class HealthScript : MonoBehaviour {
 
 		//player is coll, enemy is this
 		if((player2a || player1a) && enemy2){
-			HealthScript script = coll.gameObject.GetComponent<HealthScript>();
-			script.health -= this.gameObject.GetComponent<EnemyMovementScript>().damage;
-			script.bar.amount = (float)(script.health/100.0);
-			if (script.health <= 0){
-				if (script.gameObject.name == "Player 1"){
-					script.scripts.GetComponent<LevelLoaderScript>().player1Dead = true;
-				}
-				else if(script.gameObject.name == "Player 2"){
-					script.scripts.GetComponent<LevelLoaderScript>().player2Dead = true;
-				}
-				Destroy(script.gameObject);
+			int amount = this.gameObject.GetComponent<EnemyMovementScript>().damage;
+			takeDamage(coll.gameObject,amount);
+			if (sound != null){
+				sound.playPainSound();
 			}
+
+
 			Destroy(this.gameObject);
 		}
 		//player is this, enemy is coll
 		else if((player2b || player1b) && enemy1){
-
-			this.health -= coll.gameObject.GetComponent<EnemyMovementScript>().damage;
-			this.bar.amount = (float)(health/100.0);
+			sound.playPainSound();
+			int amount = coll.gameObject.GetComponent<EnemyMovementScript>().damage;
+			takeDamage(this.gameObject,amount);
 			//print(health/100);
 			//print("health deducted");
 			Destroy(coll.gameObject);
-			if (health <= 0){
+			/*if (health <= 0){
 				if (this.gameObject.name == "Player 1"){
+					sound.playDeathSound();
 					scripts.GetComponent<LevelLoaderScript>().player1Dead = true;
 				}
 				else{
+					sound.playDeathSound();
 					scripts.GetComponent<LevelLoaderScript>().player2Dead = true;
 				}
 				Destroy(this.gameObject);
-			}
+			}*/
 		}
 		else if(enemy1 && enemy2){
 			this.gameObject.GetComponent<EnemyMovementScript>().move = true;
@@ -111,7 +131,7 @@ public class HealthScript : MonoBehaviour {
 			}
 		}
 
-		else if(collider.name == "Enemy" && (this.gameObject.name == "Player 1" || this.gameObject.name == "Player 2")){
+		/*else if(collider.name == "Enemy" && (this.gameObject.name == "Player 1" || this.gameObject.name == "Player 2")){
 			this.health -= collider.GetComponent<EnemyMovementScript>().damage;
 			bar.amount = (float)(health/100.0);
 			//print(health/100);
@@ -126,39 +146,28 @@ public class HealthScript : MonoBehaviour {
 				}
 				Destroy(this.gameObject);
 			}
-		}
-		else if((collider.name == "Player 1" || collider.name == "Player 2") && (this.gameObject.name == "Metal Box" || this.gameObject.name == "Box")){
+		}*/
+		/*else if((collider.name == "Player 1" || collider.name == "Player 2") && (this.gameObject.name == "Metal Box" || this.gameObject.name == "Box")){
 
-			/*EnemyMovementScript enemy = collider.gameObject.GetComponent<EnemyMovementScript>();
-			DirectionEnumScript.Direction dir = DirectionEnumScript.getOpposite(enemy.orientation);
-			if (dir == DirectionEnumScript.Direction.NORTH){
-				enemy.direction = new Vector2(0,1);
-			}
-			else if (dir == DirectionEnumScript.Direction.SOUTH){
-				enemy.direction = new Vector2(0,-1);
-			}
-			else if (dir == DirectionEnumScript.Direction.EAST){
-				enemy.direction = new Vector2(1,0);
-			}
-			else {
-				enemy.direction = new Vector2(-1,0);
-			}*/
 			collider.gameObject.GetComponent<PlayerMovementScript>().colliding = true;
 			collider.gameObject.GetComponent<PlayerMovementScript>().collider_ = collider;
-		}
-		/*else if(collider.name == "Enemy" &&  this.gameObject.name == "Enemy"){
-			collider.gameObject.GetComponent<EnemyMovementScript>().move = true;
-			this.gameObject.GetComponent<EnemyMovementScript>().move = true;
 		}*/
 
+
 		else if (collider.name == "AmmoPack"){
-			this.gameObject.GetComponent<WeaponScript>().ammo = 260;
+			WeaponScript wscript = this.gameObject.GetComponent<WeaponScript>();
+			wscript.ammo =100;
+			//updating the ui
+			wscript.ammoScript.amount = wscript.ammo;
 			Destroy(collider.gameObject);
+			sound.playAmmoSound();
 
 		}
 		else if (collider.name == "HealthPack"){
-			this.gameObject.GetComponent<HealthScript>().health = 100;
+
+			takeDamage(this.gameObject, health-100);
 			Destroy(collider.gameObject);
+			sound.playHealthSound();
 		}
 		else if (collider.name == "BatteryPack"){
 			this.gameObject.GetComponent<BatteryScript>().charge = 100;
@@ -167,9 +176,11 @@ public class HealthScript : MonoBehaviour {
 		else if (collider.name == "Spawn"){
 			if(this.gameObject.name == "Player 1"){
 				scripts.GetComponent<LevelLoaderScript>().player1 = true;
+				sound.playTeleportSound();
 			}
 			else if(this.gameObject.name == "Player 2"){
 				scripts.GetComponent<LevelLoaderScript>().player2 = true;
+				sound.playTeleportSound();
 			}
 		}
 

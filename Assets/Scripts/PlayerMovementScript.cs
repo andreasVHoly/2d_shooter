@@ -17,10 +17,12 @@ public class PlayerMovementScript : MonoBehaviour {
 
 	private SpriteRenderer srender;
 
-	public bool colliding;
-	public Collider2D collider_;
+
+	public GameObject scripts;
+	private SoundScript sound;
 
 	void Start(){
+		sound = scripts.GetComponent<SoundScript>();
 		direction = DirectionEnumScript.Direction.NORTH;
 		srender = this.gameObject.GetComponent<SpriteRenderer>();
 	}
@@ -48,24 +50,28 @@ public class PlayerMovementScript : MonoBehaviour {
 
 
 		if(inputX > 0 ){
+			//sound.playStepSound();
 			direction = DirectionEnumScript.Direction.EAST;
 			if(srender.sprite != right){
 				srender.sprite = right;
 			}
 		}
 		else if (inputX < 0){
+			//sound.playStepSound();
 			direction = DirectionEnumScript.Direction.WEST;
 			if(srender.sprite != left){
 				srender.sprite = left;
 			}
 		}
 		else if(inputY > 0){
+			//sound.playStepSound();
 			direction = DirectionEnumScript.Direction.NORTH;
 			if(srender.sprite != up){
 				srender.sprite = up;
 			}
 		}
 		else if (inputY < 0){
+			//sound.playStepSound();
 			direction = DirectionEnumScript.Direction.SOUTH;
 			if(srender.sprite != down){
 				srender.sprite = down;
@@ -81,7 +87,7 @@ public class PlayerMovementScript : MonoBehaviour {
 		movement *= Time.deltaTime;
 		//we update the objects position accordinly
 		transform.Translate (movement);
-			
+
 
 
 		   

@@ -83,6 +83,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1396092161}
   - 114: {fileID: 1396092160}
+  - 114: {fileID: 1396092162}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -103,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonSkin: {fileID: 11400000, guid: 78275c1a84e52d44cbf91db0d4b34829, type: 2}
   textSkin: {fileID: 11400000, guid: 21f30a4f14fbb654f92d43fe46d7d307, type: 2}
+  sound: {fileID: 1396092162}
 --- !u!4 &1396092161
 Transform:
   m_ObjectHideFlags: 0
@@ -115,6 +117,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &1396092162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1396092159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94958bd60c318054d85d7773e7389d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo: {fileID: 8300000, guid: 4757edf3683f210468468cdcb3ada1bd, type: 3}
+  health: {fileID: 8300000, guid: e4746abdd878d9743b521e8adfab78af, type: 3}
+  teleport: {fileID: 8300000, guid: 105f043b74935ca49be32443f32e5cc8, type: 3}
+  death: {fileID: 8300000, guid: b4853a241abcda14da14b735afeef87b, type: 3}
+  pain: {fileID: 8300000, guid: 69bd7d1041a429746808aa190137bcd6, type: 3}
+  shot: {fileID: 8300000, guid: 9c6d5a4c452dd1946bef19fd29287a40, type: 3}
+  step: {fileID: 8300000, guid: 4763c58708f13bc458ff5b92318118a8, type: 3}
+  gameOver: {fileID: 8300000, guid: 523fd10ce3791eb419a6bf8707d78939, type: 3}
 --- !u!1 &1659637932
 GameObject:
   m_ObjectHideFlags: 0
