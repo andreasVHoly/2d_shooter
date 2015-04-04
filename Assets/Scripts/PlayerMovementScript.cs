@@ -19,7 +19,6 @@ public class PlayerMovementScript : MonoBehaviour {
 
 	public bool colliding;
 	public Collider2D collider_;
-	public DirectionEnumScript.Direction blocked;
 
 	void Start(){
 		direction = DirectionEnumScript.Direction.NORTH;
@@ -48,25 +47,25 @@ public class PlayerMovementScript : MonoBehaviour {
 
 
 
-		if(inputX > 0 && blocked != DirectionEnumScript.Direction.EAST){
+		if(inputX > 0 ){
 			direction = DirectionEnumScript.Direction.EAST;
 			if(srender.sprite != right){
 				srender.sprite = right;
 			}
 		}
-		else if (inputX < 0 && blocked != DirectionEnumScript.Direction.WEST){
+		else if (inputX < 0){
 			direction = DirectionEnumScript.Direction.WEST;
 			if(srender.sprite != left){
 				srender.sprite = left;
 			}
 		}
-		else if(inputY > 0 && blocked != DirectionEnumScript.Direction.NORTH){
+		else if(inputY > 0){
 			direction = DirectionEnumScript.Direction.NORTH;
 			if(srender.sprite != up){
 				srender.sprite = up;
 			}
 		}
-		else if (inputY < 0 && blocked != DirectionEnumScript.Direction.SOUTH){
+		else if (inputY < 0){
 			direction = DirectionEnumScript.Direction.SOUTH;
 			if(srender.sprite != down){
 				srender.sprite = down;
@@ -74,34 +73,17 @@ public class PlayerMovementScript : MonoBehaviour {
 		}
 
 
-		//if (!colliding){//we make a new vector for the movement of where our object should be in relation to the input, and its new position it will attain by moving with its speed
+		//we make a new vector for the movement of where our object should be in relation to the input, and its new position it will attain by moving with its speed
 
-			Vector3 movement = new Vector3 (speed.x * inputX, speed.y * inputY, 0);
+		Vector3 movement = new Vector3 (speed.x * inputX, speed.y * inputY, 0);
 
-			//we need to change this new position with repect to delta time
-			movement *= Time.deltaTime;
-			//we update the objects position accordinly
-			transform.Translate (movement);
+		//we need to change this new position with repect to delta time
+		movement *= Time.deltaTime;
+		//we update the objects position accordinly
+		transform.Translate (movement);
 			
 
-		/*}
-		else{
-			if (direction == DirectionEnumScript.Direction.NORTH){
-				blocked = DirectionEnumScript.Direction.NORTH;
 
-			}
-			else if (direction == DirectionEnumScript.Direction.SOUTH){
-				blocked = DirectionEnumScript.Direction.SOUTH;
-			}
-			else if (direction == DirectionEnumScript.Direction.EAST){
-				blocked = DirectionEnumScript.Direction.EAST;
-			}
-			else if (direction == DirectionEnumScript.Direction.WEST){
-				blocked = DirectionEnumScript.Direction.WEST;
-			}
-			//var dir = transform.InverseTransformPoint(collider_.contacts[0])
-			colliding = false;
-		}*/
 		   
 	}
 }
