@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/**
+ * This class is not used, was for 
+ */
 public class BatteryScript : MonoBehaviour {
 
 	public float charge = 100;

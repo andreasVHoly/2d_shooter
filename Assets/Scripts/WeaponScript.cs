@@ -1,69 +1,70 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * This class handles all the weapon based variables and the creating of bullets for a object
+ * Further it checks for input from both players if they are shooting
+ */
 public class WeaponScript : MonoBehaviour {
-	
 
-	//the delay in between shots
-	public float delay = 0.25f;
-
-
-	//ammo variable
+	//ammo variablem, how much ammo the player has
 	public int ammo = 100;
 
-	public AmmoCountScript ammoScript;
 
+	//NOTE: variables below need to be assigned in unity, otherwise nullptr
+	
+	//the script that handles the UI ammo counter
+	public AmmoCountScript ammoScript;
 	//a transform for our new bullet to be spawned
 	public Transform bullet;
-
+	//the scripts folder in order to access sounds
 	public GameObject scripts;
-	private SoundScript sound ;
+	//the sound script
+	private SoundScript sound;
 
-
+	//called on start
 	void Start(){
-		sound = scripts.GetComponent<SoundScript>();
+		sound = scripts.GetComponent<SoundScript>();//init
 	}
 
 	// Update is called once per frame
 	void Update () {
 		//shooting key for player 2
-		if (Input.GetKeyDown (KeyCode.RightControl) && this.gameObject.name == "Player 2") {
-			if(ammo > 0){
-				this.spawnBullet ();
-				this.ammo--;
-				ammoScript.amount = this.ammo;
+		if (Input.GetKeyDown (KeyCode.RightControl) && this.gameObject.name == "Player 2") {//if the key is pressed and the current object is player 2
+			if(ammo > 0){//if we have ammo
+				this.spawnBullet ();//call method that spawns bullets and handles variable updates
 			}
 		}
 		//shooting key for player 1
-		if (Input.GetKeyDown (KeyCode.LeftAlt) && this.gameObject.name == "Player 1") {
-			if(ammo > 0){
-				this.spawnBullet ();
-				this.ammo--;
-				ammoScript.amount = this.ammo;
+		if (Input.GetKeyDown (KeyCode.LeftAlt) && this.gameObject.name == "Player 1") {//if the key is pressed and the current object is player 1
+			if(ammo > 0){//if we have ammo
+				this.spawnBullet ();//call method that spawns bullets and handles variable updates
 			}
 		}
 	}
 
-	//spawns a bullet at the players location
+
+	//spawns a bullet at the desired location in the desired direction
+	//also updates all needed vraiables and UI
 	void spawnBullet(){
 		//we make a new bullet
 		var shot = Instantiate(bullet) as Transform;
-
+		//get the bullet script to set the parent, we set the parent so that if the bullet hits an enemy, the enemy knows which player to chase
 		shot.GetComponent<BulletScript>().parent = this.gameObject;
-
 		//we get the current objects direction
 		DirectionEnumScript.Direction dir =  this.gameObject.GetComponent<PlayerMovementScript>().direction;
 
-		Vector3 newPos = this.transform.position;
-		float x = this.transform.position.x;
-		float y = this.transform.position.y;
 
-		float width = this.transform.collider2D.bounds.size.x/2;
-		float height = this.transform.collider2D.bounds.size.y/2;
+		//next we calculate where to spawn the bullet and then we choose the direction and fine tune the location
+		//we do this because we want the bullet to spawn at the muzzle of the gun and not on the player
+		Vector3 newPos = this.transform.position;//default
+		float x = newPos.x;//set old x
+		float y = newPos.y;//set old y
+		float width = this.transform.collider2D.bounds.size.x/2;//get width of the player object
+		float height = this.transform.collider2D.bounds.size.y/2;//get height of the player object
+		float offset = 0.1f;//we set a small offset to move the location in a bit
 
-		float offset = 0.1f;
-
-
+		//we no check what direction the bullet needs to be fired in and then sets its spawning location accordinly
 		switch(dir){
 		case DirectionEnumScript.Direction.NORTH:
 			//move x pos right and y pos up
@@ -82,23 +83,22 @@ public class WeaponScript : MonoBehaviour {
 			newPos = new Vector3(x+width,y-height+offset,0);
 			break;
 		}
-			
-		//default
-		//shot.position = this.transform.position;
+		//we set the position
 		shot.position = newPos;
 
-		//we get the desired direction of the bullet based on the current game objects direction
+		//we need to get the script in order to change the direction we aquired
 		SingleDirMovementScript bulletMovement = shot.gameObject.GetComponent<SingleDirMovementScript>();
-		//if we got a valid return
+		//if we got a valid return, should technically never fail
 		if (bulletMovement != null){
-			//we set the direction approriately based on the current objects direction
-
+			//we set the direction approriately based on the current objects direction we got earlier
 			bulletMovement.setDirection(dir);
 		}
-
+		//we play the sound for a gunshot
 		sound.playShotSound();	
-
+		//decrease ammo count by 1
+		this.ammo--;
+		//update  UI
+		ammoScript.amount = this.ammo;
 	}
-
 
 }
