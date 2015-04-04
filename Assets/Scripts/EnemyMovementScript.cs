@@ -30,10 +30,15 @@ public class EnemyMovementScript : MonoBehaviour {
 	public Sprite down;
 	private SpriteRenderer srender;
 	private int travelDistance;
+
+
+	public GameObject scripts;
+	private SoundScript sound;
 	
 	public bool move = false;
 
 	void Start(){
+		sound = scripts.GetComponent<SoundScript>();
 		travelDistance = 120;
 		srender = this.gameObject.GetComponent<SpriteRenderer>();
 	}
@@ -46,6 +51,7 @@ public class EnemyMovementScript : MonoBehaviour {
 		var rayCast = Physics2D.Raycast(this.transform.position, direction, detectionRange, 1 << LayerMask.NameToLayer("Player"));
 		Debug.DrawRay(transform.position, new Vector3(direction.x,direction.y,0), Color.red);
 		if (chasing){
+			sound.playZombieSound();
 			if (prey == null){
 				chasing = false;
 				return;
@@ -106,6 +112,7 @@ public class EnemyMovementScript : MonoBehaviour {
 		else if(rayCast){
 			prey = rayCast.transform.gameObject;
 			chasing = true;
+			sound.playZombieSound();
 			//print("raycasting");
 		}
 		else{
@@ -118,7 +125,7 @@ public class EnemyMovementScript : MonoBehaviour {
 			if (counter > travelDistance || move) {
 				//we get a random number to decide our direction of movement
 				//print("**** changing dir");
-
+				sound.playZombieSound();
 				int number = Random.Range (0, 3);
 				travelDistance = Random.Range(120,1200);
 				//we move up

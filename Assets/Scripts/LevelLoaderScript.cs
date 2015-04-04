@@ -12,7 +12,9 @@ public class LevelLoaderScript : MonoBehaviour {
 
 	public SoundScript sound;
 
-
+	void Start(){
+		sound = scripts.GetComponent<SoundScript>();
+	}
 
 	void Update(){
 		if ( (player1 && player2) || (player1 && player2Dead) || (player1Dead && player2)){

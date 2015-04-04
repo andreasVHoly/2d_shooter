@@ -120,6 +120,7 @@ public class HealthScript : MonoBehaviour {
 				if (health <= 0){
 					if(this.gameObject.name == "Enemy"){
 						kills.amount += 1;
+						sound.playZombieSound();
 					}
 					Destroy (gameObject);
 				}

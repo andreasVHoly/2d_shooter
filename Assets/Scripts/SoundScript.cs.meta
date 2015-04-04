@@ -11,6 +11,30 @@ MonoImporter:
   - shot: {fileID: 8300000, guid: 9c6d5a4c452dd1946bef19fd29287a40, type: 3}
   - step: {fileID: 8300000, guid: 4763c58708f13bc458ff5b92318118a8, type: 3}
   - gameOver: {fileID: 8300000, guid: 523fd10ce3791eb419a6bf8707d78939, type: 3}
+  - zombie0: {fileID: 8300000, guid: 9a891548f5dd5ac43bcde853e3471e4c, type: 3}
+  - zombie1: {fileID: 8300000, guid: 633ceedb91bce3c42a535d2dd421546a, type: 3}
+  - zombie2: {fileID: 8300000, guid: d6726dfec57288142815da01f5561518, type: 3}
+  - zombie3: {fileID: 8300000, guid: a8df69c9327fa174e9b5a447cd08c7a2, type: 3}
+  - zombie4: {fileID: 8300000, guid: 01d1703ff7392b7469857b276a40a92f, type: 3}
+  - zombie5: {fileID: 8300000, guid: ed6849cb6637da14e895766fd49fc727, type: 3}
+  - zombie6: {fileID: 8300000, guid: 4d799a53dad191d44872d146f128e803, type: 3}
+  - zombie7: {fileID: 8300000, guid: 1bf26e4ec5d25984abdaeaa468bcde87, type: 3}
+  - zombie8: {fileID: 8300000, guid: 442964cccf713fe45b0b119670d69322, type: 3}
+  - zombie9: {fileID: 8300000, guid: 2a1fe79d89c744845bf640fde0cfb518, type: 3}
+  - zombie10: {fileID: 8300000, guid: 9471478dfe2ebc343a2bf31a0f1c31d0, type: 3}
+  - zombie11: {fileID: 8300000, guid: e44edf69ca6e78742a714931ad1116cb, type: 3}
+  - zombie12: {fileID: 8300000, guid: 7cb1f640ca445794ab114addf7c52af9, type: 3}
+  - zombie13: {fileID: 8300000, guid: 10ac17933dfc379489ce81ce0da8c89f, type: 3}
+  - zombie14: {fileID: 8300000, guid: 1afdfb9f29e367a4091a791d9e8d4896, type: 3}
+  - zombie15: {fileID: 8300000, guid: aa552be94b55da44b911d427f8a0c560, type: 3}
+  - zombie16: {fileID: 8300000, guid: d42bfad2b1ce1764c8e8e54c6a3c965b, type: 3}
+  - zombie17: {fileID: 8300000, guid: 0d55a6b5db41eec4784002fd63a90a06, type: 3}
+  - zombie18: {fileID: 8300000, guid: 021c0bee4ebfebe4c8e4d856e0f23401, type: 3}
+  - zombie19: {fileID: 8300000, guid: d41e71a5e6bbb7f4787e61a154a8bf42, type: 3}
+  - zombie20: {fileID: 8300000, guid: a49329d3ff0985a46a3c1d1bb3d6644f, type: 3}
+  - zombie21: {fileID: 8300000, guid: fd93bdb498f828d4ba3b16cf4e6bf0dd, type: 3}
+  - zombie22: {fileID: 8300000, guid: cf49d3af13979764aabb24f3742f4686, type: 3}
+  - zombie23: {fileID: 8300000, guid: 04555f69a59aab242919660bfcfb5101, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -19,10 +19,10 @@ public class PlayerMovementScript : MonoBehaviour {
 
 
 	public GameObject scripts;
-	private SoundScript sound;
+//	private SoundScript sound;
 
 	void Start(){
-		sound = scripts.GetComponent<SoundScript>();
+		//sound = scripts.GetComponent<SoundScript>();
 		direction = DirectionEnumScript.Direction.NORTH;
 		srender = this.gameObject.GetComponent<SpriteRenderer>();
 	}
