@@ -1243,8 +1243,8 @@ Prefab:
       value: 
       objectReference: {fileID: 530343660}
     m_RemovedComponents:
-    - {fileID: 11400006, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
-    - {fileID: 11400008, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 78c1569de93b32846b5b51fdbf33d975, type: 2}
   m_RootGameObject: {fileID: 1386526076}
   m_IsPrefabParent: 0
@@ -1401,8 +1401,8 @@ Prefab:
       objectReference: {fileID: 400000, guid: b8547ddd28958c341ae9ebe6ff455ce4, type: 2}
     m_RemovedComponents:
     - {fileID: 21200000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
-    - {fileID: 11400008, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
-    - {fileID: 11400006, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 3061180b3e3f4184dbdab91c87759453, type: 2}
   m_RootGameObject: {fileID: 436004971}
   m_IsPrefabParent: 0
@@ -5470,7 +5470,6 @@ MonoBehaviour:
   right: {fileID: 21300000, guid: d8047e5f1f6c47540994b84a27c17bae, type: 3}
   up: {fileID: 21300000, guid: 3de1fe0b25e19e7498d321f9cba55e49, type: 3}
   down: {fileID: 21300000, guid: 71e659d99285dc640947e283ddeff5df, type: 3}
-  scripts: {fileID: 530343660}
 --- !u!212 &436004974
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5550,7 +5549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9b8091c6e950244a3f2bb3fd243095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: .25
   ammo: 100
   ammoScript: {fileID: 225242746}
   bullet: {fileID: 400000, guid: b8547ddd28958c341ae9ebe6ff455ce4, type: 2}
@@ -6145,19 +6143,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 3}
   direction: {x: 0, y: 0}
-  chasing: 0
-  damage: 20
   orientation: 0
+  damage: 20
+  chasing: 0
   detectionRange: 30
   chasingRange: 6.5
-  prey: {fileID: 0}
+  move: 0
+  overRide: 0
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
+  prey: {fileID: 0}
   scripts: {fileID: 530343660}
-  move: 0
-  overRide: 0
 --- !u!212 &474492832
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7179,7 +7177,6 @@ MonoBehaviour:
   player1Dead: 0
   player2Dead: 0
   buttonSkin: {fileID: 11400000, guid: 8be30fccd26109749a9f0a45fc1fab82, type: 2}
-  scripts: {fileID: 530343660}
 --- !u!114 &530343663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7197,8 +7194,6 @@ MonoBehaviour:
   death: {fileID: 8300000, guid: b4853a241abcda14da14b735afeef87b, type: 3}
   pain: {fileID: 8300000, guid: 69bd7d1041a429746808aa190137bcd6, type: 3}
   shot: {fileID: 8300000, guid: 9c6d5a4c452dd1946bef19fd29287a40, type: 3}
-  step: {fileID: 8300000, guid: 4763c58708f13bc458ff5b92318118a8, type: 3}
-  gameOver: {fileID: 8300000, guid: 523fd10ce3791eb419a6bf8707d78939, type: 3}
   zombie0: {fileID: 8300000, guid: 9a891548f5dd5ac43bcde853e3471e4c, type: 3}
   zombie1: {fileID: 8300000, guid: 633ceedb91bce3c42a535d2dd421546a, type: 3}
   zombie2: {fileID: 8300000, guid: d6726dfec57288142815da01f5561518, type: 3}
@@ -10344,19 +10339,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 3}
   direction: {x: 0, y: 0}
-  chasing: 0
-  damage: 20
   orientation: 0
+  damage: 20
+  chasing: 0
   detectionRange: 30
   chasingRange: 6.5
-  prey: {fileID: 0}
+  move: 0
+  overRide: 0
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
+  prey: {fileID: 0}
   scripts: {fileID: 530343660}
-  move: 0
-  overRide: 0
 --- !u!212 &795194510
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13025,19 +13020,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 3}
   direction: {x: 0, y: 0}
-  chasing: 0
-  damage: 20
   orientation: 0
+  damage: 20
+  chasing: 0
   detectionRange: 30
   chasingRange: 6.5
-  prey: {fileID: 0}
+  move: 0
+  overRide: 0
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
+  prey: {fileID: 0}
   scripts: {fileID: 530343660}
-  move: 0
-  overRide: 0
 --- !u!212 &1046562086
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13880,19 +13875,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 3}
   direction: {x: 0, y: 0}
-  chasing: 0
-  damage: 20
   orientation: 0
+  damage: 20
+  chasing: 0
   detectionRange: 30
   chasingRange: 6.5
-  prey: {fileID: 0}
+  move: 0
+  overRide: 0
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
+  prey: {fileID: 0}
   scripts: {fileID: 530343660}
-  move: 0
-  overRide: 0
 --- !u!212 &1119599467
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16783,7 +16778,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9b8091c6e950244a3f2bb3fd243095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: .25
   ammo: 100
   ammoScript: {fileID: 1601514883}
   bullet: {fileID: 400000, guid: b8547ddd28958c341ae9ebe6ff455ce4, type: 2}
@@ -16806,7 +16800,6 @@ MonoBehaviour:
   right: {fileID: 21300000, guid: e675581caa7587840b048e12e6d03f2b, type: 3}
   up: {fileID: 21300000, guid: e3f4c5a37182ca743ba316058fb5b7bb, type: 3}
   down: {fileID: 21300000, guid: f393d22db1b365043be4d15e8ed77dc1, type: 3}
-  scripts: {fileID: 530343660}
 --- !u!212 &1386526080
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17037,19 +17030,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 3}
   direction: {x: 0, y: 0}
-  chasing: 0
-  damage: 20
   orientation: 0
+  damage: 20
+  chasing: 0
   detectionRange: 30
   chasingRange: 6.5
-  prey: {fileID: 0}
+  move: 0
+  overRide: 0
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
+  prey: {fileID: 0}
   scripts: {fileID: 530343660}
-  move: 0
-  overRide: 0
 --- !u!212 &1406687673
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17659,19 +17652,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 3}
   direction: {x: 0, y: 0}
-  chasing: 0
-  damage: 20
   orientation: 0
+  damage: 20
+  chasing: 0
   detectionRange: 30
   chasingRange: 6.5
-  prey: {fileID: 0}
+  move: 0
+  overRide: 0
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
+  prey: {fileID: 0}
   scripts: {fileID: 530343660}
-  move: 0
-  overRide: 0
 --- !u!212 &1442610978
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18205,19 +18198,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 3}
   direction: {x: 0, y: 0}
-  chasing: 0
-  damage: 20
   orientation: 0
+  damage: 20
+  chasing: 0
   detectionRange: 30
   chasingRange: 6.5
-  prey: {fileID: 0}
+  move: 0
+  overRide: 0
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
+  prey: {fileID: 0}
   scripts: {fileID: 530343660}
-  move: 0
-  overRide: 0
 --- !u!212 &1511945397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20146,19 +20139,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 3}
   direction: {x: 0, y: 0}
-  chasing: 0
-  damage: 20
   orientation: 0
+  damage: 20
+  chasing: 0
   detectionRange: 30
   chasingRange: 6.5
-  prey: {fileID: 0}
+  move: 0
+  overRide: 0
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
+  prey: {fileID: 0}
   scripts: {fileID: 530343660}
-  move: 0
-  overRide: 0
 --- !u!212 &1642127498
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21155,19 +21148,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 3}
   direction: {x: 0, y: 0}
-  chasing: 0
-  damage: 20
   orientation: 0
+  damage: 20
+  chasing: 0
   detectionRange: 30
   chasingRange: 6.5
-  prey: {fileID: 0}
+  move: 0
+  overRide: 0
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
+  prey: {fileID: 0}
   scripts: {fileID: 530343660}
-  move: 0
-  overRide: 0
 --- !u!212 &1709887133
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24004,19 +23997,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 3}
   direction: {x: 0, y: 0}
-  chasing: 0
-  damage: 20
   orientation: 0
+  damage: 20
+  chasing: 0
   detectionRange: 30
   chasingRange: 6.5
-  prey: {fileID: 0}
+  move: 0
+  overRide: 0
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
+  prey: {fileID: 0}
   scripts: {fileID: 530343660}
-  move: 0
-  overRide: 0
 --- !u!212 &1915667491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26226,19 +26219,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 3, y: 3}
   direction: {x: 0, y: 0}
-  chasing: 0
-  damage: 20
   orientation: 0
+  damage: 20
+  chasing: 0
   detectionRange: 30
   chasingRange: 6.5
-  prey: {fileID: 0}
+  move: 0
+  overRide: 0
   left: {fileID: 21300000, guid: d5e8fc82e2076174899271cd68ef4798, type: 3}
   right: {fileID: 21300000, guid: 8cb7a6fb3e4af924aa89f8fbdd63ea7b, type: 3}
   up: {fileID: 21300000, guid: a690bbdd0f89e1f4dac6419342665f15, type: 3}
   down: {fileID: 21300000, guid: 4709a51a7a50b1f4ea1cd13bed815653, type: 3}
+  prey: {fileID: 0}
   scripts: {fileID: 530343660}
-  move: 0
-  overRide: 0
 --- !u!212 &2051671175
 SpriteRenderer:
   m_ObjectHideFlags: 0

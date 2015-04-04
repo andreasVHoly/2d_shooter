@@ -14,8 +14,6 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400006}
-  - 114: {fileID: 11400008}
   m_Layer: 10
   m_Name: Player 2
   m_TagString: Untagged
@@ -74,6 +72,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 10, y: 10}
   direction: 0
+  left: {fileID: 0}
+  right: {fileID: 0}
+  up: {fileID: 0}
+  down: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -88,6 +90,8 @@ MonoBehaviour:
   health: 100
   isEnemy: 0
   scripts: {fileID: 0}
+  bar: {fileID: 0}
+  kills: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,37 +103,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9b8091c6e950244a3f2bb3fd243095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: .25
   ammo: 100
+  ammoScript: {fileID: 0}
   bullet: {fileID: 400000, guid: b8547ddd28958c341ae9ebe6ff455ce4, type: 2}
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d92d69dda9da746bee7ffaec93cb2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charge: 100
-  drain: .0250000004
-  lighting: 1
---- !u!114 &11400008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d92d69dda9da746bee7ffaec93cb2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charge: 100
-  drain: .0250000004
-  lighting: 1
+  scripts: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
