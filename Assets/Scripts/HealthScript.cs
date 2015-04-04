@@ -24,6 +24,8 @@ public class HealthScript : MonoBehaviour {
 	public KillCountScript kills;
 	//transform for our blood puddle that we spawn after the object dies
 	public Transform puddle;
+	//smoke effect for when boxes are destroyed
+	public ParticleSystem smoke;
 
 	//used to increase/decrease the health of an obeject and to manage the ui afterwards
 	public void takeDamage(GameObject entity, int amount){
@@ -114,17 +116,22 @@ public class HealthScript : MonoBehaviour {
 
 				//if this object we hit has no health anymore, we destroy it as it is dead
 				if (health <= 0){
+					//we set the objects position
+					Vector3 pos = gameObject.transform.position;
 					if(this.gameObject.name == "Enemy"){//if it is an enemy, we add to the games kill counter
 						kills.amount += 1;
 						sound.playZombieSound();//we play a zombie sound
 						//we create a new puddle 
-						var blood = Instantiate(puddle) as Transform;
+						Transform blood = Instantiate(puddle) as Transform;
 						//we set the position of the puddle to the objects position so it is left behind 
 						//we set a new z value so the blood does not stand higher than our characters
-						Vector3 pos = gameObject.transform.position;
 						blood.transform.position = new Vector3(pos.x,pos.y,7);
 					}
-					Destroy (gameObject);//we destroy the zombie
+					else if(this.gameObject.name == "Box"){//if we are killing a box, we want a smoke burst
+						ParticleSystem smokeScreen = Instantiate(smoke) as ParticleSystem;
+						smokeScreen.transform.position = new Vector3(pos.x,pos.y,7);
+					}
+					Destroy (this.gameObject);//we destroy the zombie
 				}
 			}
 			else{//if the entity we are hitting is not an enemy, we just want to handle the collision differently
