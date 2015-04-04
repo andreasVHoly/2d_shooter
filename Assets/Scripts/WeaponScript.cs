@@ -44,8 +44,39 @@ public class WeaponScript : MonoBehaviour {
 
 		//we get the current objects direction
 		DirectionEnumScript.Direction dir =  this.gameObject.GetComponent<PlayerMovementScript>().direction;
+
+		Vector3 newPos = this.transform.position;
+		float x = this.transform.position.x;
+		float y = this.transform.position.y;
+
+		float width = this.transform.collider2D.bounds.size.x/2;
+		float height = this.transform.collider2D.bounds.size.y/2;
+
+		float offset = 0.1f;
+
+
+		switch(dir){
+		case DirectionEnumScript.Direction.NORTH:
+			//move x pos right and y pos up
+			newPos = new Vector3(x+width-offset,y+height,0);
+			break;
+		case DirectionEnumScript.Direction.SOUTH:
+			//move x pos left and y pos down
+			newPos = new Vector3(x-width+offset,y-height,0);
+			break;
+		case DirectionEnumScript.Direction.WEST:
+			//move y pos up and x pos left
+			newPos = new Vector3(x-width,y+height-offset,0);
+			break;
+		case DirectionEnumScript.Direction.EAST:
+			//move y pos down and x pos right
+			newPos = new Vector3(x+width,y-height+offset,0);
+			break;
+		}
+			
 		//default
-		shot.position = this.transform.position;
+		//shot.position = this.transform.position;
+		shot.position = newPos;
 
 		//we get the desired direction of the bullet based on the current game objects direction
 		SingleDirMovementScript bulletMovement = shot.gameObject.GetComponent<SingleDirMovementScript>();

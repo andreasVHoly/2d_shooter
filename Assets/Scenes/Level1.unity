@@ -7037,7 +7037,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 530343661}
   - 114: {fileID: 530343662}
-  - 114: {fileID: 530343663}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -7073,24 +7072,6 @@ MonoBehaviour:
   player1Dead: 0
   player2Dead: 0
   scripts: {fileID: 530343660}
---- !u!114 &530343663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 530343660}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3697bde99b52fb3498ef4897e96bf3c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sWidth: 0
-  sHeight: 0
-  startX: 0
-  startY: 0
-  width: 0
-  height: 0
-  buttonSkin: {fileID: 11400000, guid: 78275c1a84e52d44cbf91db0d4b34829, type: 2}
 --- !u!1 &533699679
 GameObject:
   m_ObjectHideFlags: 0
