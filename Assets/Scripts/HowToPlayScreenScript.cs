@@ -31,6 +31,10 @@ public class HowToPlayScreenScript : MonoBehaviour {
 		if(GUI.Button(new Rect(sWidth-100, sHeight-50, 100,50 ),"Back")){
 			Application.LoadLevel("MainMenu");
 		}
+		if(GUI.Button(new Rect(sWidth/2-400, sHeight/2+180, 335,50 ),"UI Interface")){
+			Application.LoadLevel("UserInterface");
+		}
+
 		// we display heading to this scene
 		GUI.skin = textSkin;
 		GUI.Label(new Rect(sWidth/2-400,0,800, 300),"How to play:");
