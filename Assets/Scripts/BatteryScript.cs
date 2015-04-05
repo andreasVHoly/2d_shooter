@@ -42,7 +42,6 @@ using System.Collections;
 		else if (flashLight.cookieSize > shrunk){//if it is below 0.2, we shrink the area the light covers up until a radius of 4
 			flashLight.cookieSize -= discharge;
 		}
-		print(charge/10f);
 		flashLight.intensity = charge/10f;//we update the catual value
 		battery.amount = flashLight.intensity/fullCharge;
 	}

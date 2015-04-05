@@ -7593,6 +7593,7 @@ MonoBehaviour:
   death: {fileID: 8300000, guid: b4853a241abcda14da14b735afeef87b, type: 3}
   pain: {fileID: 8300000, guid: 69bd7d1041a429746808aa190137bcd6, type: 3}
   shot: {fileID: 8300000, guid: 9c6d5a4c452dd1946bef19fd29287a40, type: 3}
+  battery: {fileID: 8300000, guid: 4304523320d67324f86d676eff752665, type: 3}
   zombie0: {fileID: 8300000, guid: 9a891548f5dd5ac43bcde853e3471e4c, type: 3}
   zombie1: {fileID: 8300000, guid: 633ceedb91bce3c42a535d2dd421546a, type: 3}
   zombie2: {fileID: 8300000, guid: d6726dfec57288142815da01f5561518, type: 3}

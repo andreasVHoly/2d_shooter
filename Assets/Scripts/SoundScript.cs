@@ -16,6 +16,7 @@ public class SoundScript : MonoBehaviour {
 	public AudioClip death;//sound for a player dying
 	public AudioClip pain;//sound for a player getting damaged
 	public AudioClip shot;//sound for a gun being fired
+	public AudioClip battery;//sound for picking up a battery pack
 
 	//24 individual zombie sounds
 	public AudioClip zombie0;
@@ -63,6 +64,11 @@ public class SoundScript : MonoBehaviour {
 	//we play a gun shot sound
 	public void playShotSound(){
 		playSound(shot);
+	}
+
+	//we play a pain sound
+	public void playBatterySound(){
+		playSound(battery);
 	}
 
 	//we play a pain sound

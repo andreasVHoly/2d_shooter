@@ -167,7 +167,7 @@ public class HealthScript : MonoBehaviour {
 			//we destroy the health crate
 			Destroy(collider.gameObject);
 			//we play a sound for picking up the battery pack
-			//sound.playHealthSound();
+			sound.playBatterySound();
 		}
 		//if we have trigger collision with a beacon
 		else if (collider.name == "Spawn"){
