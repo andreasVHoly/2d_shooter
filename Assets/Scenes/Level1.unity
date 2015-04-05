@@ -8909,15 +8909,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1276399259}
     m_Modifications:
     - target: {fileID: 400000, guid: 815315a09187e084abf6222432782d6e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.76795769
+      value: 8.76500034
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 815315a09187e084abf6222432782d6e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.307224274
+      value: -.294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 815315a09187e084abf6222432782d6e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8945,7 +8945,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 815315a09187e084abf6222432782d6e, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 815315a09187e084abf6222432782d6e, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -13865,11 +13865,11 @@ Transform:
   m_PrefabInternal: {fileID: 633610903}
   m_GameObject: {fileID: 1053941009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.76795769, y: -.307224274, z: 5}
+  m_LocalPosition: {x: 8.76500034, y: -.294, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1276399259}
+  m_RootOrder: 20
 --- !u!114 &1053941011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16137,6 +16137,7 @@ Transform:
   - {fileID: 1442847098}
   - {fileID: 429531097}
   - {fileID: 795082888}
+  - {fileID: 1053941010}
   - {fileID: 1540409621}
   m_Father: {fileID: 882076700}
   m_RootOrder: 2
@@ -16655,7 +16656,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 434370, guid: 9c3352ba9fca29945b21a820f125e987, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 11434370, guid: 9c3352ba9fca29945b21a820f125e987, type: 2}
       propertyPath: scripts
@@ -19641,7 +19642,7 @@ Transform:
   m_LocalScale: {x: 1.20000005, y: 1.20000005, z: 1.20000005}
   m_Children: []
   m_Father: {fileID: 1276399259}
-  m_RootOrder: 20
+  m_RootOrder: 21
 --- !u!114 &1540409622
 MonoBehaviour:
   m_ObjectHideFlags: 0
