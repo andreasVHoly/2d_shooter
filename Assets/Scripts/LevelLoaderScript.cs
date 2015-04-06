@@ -19,6 +19,8 @@ public class LevelLoaderScript : MonoBehaviour {
 	public bool player1Dead =  false;
 	//if player 2 is dead
 	public bool player2Dead = false;
+	//counter to not switch screens immdediately
+	private float countDown = 0;
 
 	//Other vars that need to be assigned in Unity, otherwise will end up in Null pointers NOTE NOTE NOTE
 
@@ -31,15 +33,29 @@ public class LevelLoaderScript : MonoBehaviour {
 		if ( (player1 && player2) //if both players are ready
 		    || (player1 && player2Dead) //if player 1 is ready and player 2 has died
 		    || (player1Dead && player2)){//if player 2 is ready and player 1 has died
-
-			//we load the game won scene
+			//we incerment the counter
+			countDown += Time.deltaTime;
 			//alternatively if we had another level, we would load this level here 
-			Application.LoadLevel("GameWon");
+			if (countDown > 2){
+				//we load the appropraite scence
+				if (Application.loadedLevelName == "Level1"){
+					Application.LoadLevel("Level2");
+				}
+				else{
+					Application.LoadLevel("GameWon");
+				}
+			}
+
+
 		}
 
 		//we check if the game has been lost
 		if (player1Dead && player2Dead){//if both players are dead
-			Application.LoadLevel("GameOver");//load the game over scene
+			countDown += Time.deltaTime;
+			if (countDown > 2){
+				Application.LoadLevel("GameOver");//load the game over scene
+			}
+
 		}
 	}
 

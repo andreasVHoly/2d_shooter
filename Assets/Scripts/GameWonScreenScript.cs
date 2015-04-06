@@ -35,15 +35,23 @@ public class GameWonScreenScript : MonoBehaviour {
 		//we make 3 buttons
 		GUI.skin = buttonSkin;
 		if(GUI.Button(new Rect(startX-width-20,startY,width,height),"Replay")){//if we want to replay the level
+
 			Application.LoadLevel("Level1");//load the same level
-			//NOTE: this needs to be changed if we want to a level other than level 1, if we have more
+
 		}
+
 		if(GUI.Button(new Rect(startX,startY,width,height),"Main Menu")){//if we want to go to the main menu
 			Application.LoadLevel("MainMenu");//load the main menu scene
 		}
 		if(GUI.Button(new Rect(startX + width+20,startY,width,height),"Exit")){//if we want to exit
 			Application.Quit();//exit the app
 		}
+
+
+			
+			
+
+
 		
 		//display the heading and the kill count from the round just played
 		GUI.skin = textSkin;

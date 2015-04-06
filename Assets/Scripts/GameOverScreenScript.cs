@@ -35,6 +35,7 @@ public class GameOverScreenScript : MonoBehaviour {
 		GUI.skin = buttonSkin;
 		GUI.skin = buttonSkin;
 		if(GUI.Button(new Rect(startX-width-20,startY,width,height),"Retry")){//if we want to replay the level
+
 			Application.LoadLevel("Level1");//load the same level
 			//NOTE: this needs to be changed if we want to a level other than level 1, if we have more
 		}

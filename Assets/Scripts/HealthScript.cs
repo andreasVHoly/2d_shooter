@@ -27,6 +27,9 @@ public class HealthScript : MonoBehaviour {
 	//smoke effect for when boxes are destroyed
 	public ParticleSystem smoke;
 
+
+
+
 	//used to increase/decrease the health of an obeject and to manage the ui afterwards
 	public void takeDamage(GameObject entity, int amount){
 		//we get the health script of the entity we are updating
