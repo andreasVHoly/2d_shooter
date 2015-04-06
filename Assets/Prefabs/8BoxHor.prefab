@@ -504,6 +504,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isEnemy: 1
+  scripts: {fileID: 0}
+  bar: {fileID: 0}
+  kills: {fileID: 0}
+  puddle: {fileID: 0}
+  smoke: {fileID: 19894380, guid: 97d83ba77ae60ab4391800cc0114095b, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -517,6 +522,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isEnemy: 1
+  scripts: {fileID: 0}
+  bar: {fileID: 0}
+  kills: {fileID: 0}
+  puddle: {fileID: 0}
+  smoke: {fileID: 19894380, guid: 97d83ba77ae60ab4391800cc0114095b, type: 2}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -530,6 +540,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isEnemy: 1
+  scripts: {fileID: 0}
+  bar: {fileID: 0}
+  kills: {fileID: 0}
+  puddle: {fileID: 0}
+  smoke: {fileID: 19894380, guid: 97d83ba77ae60ab4391800cc0114095b, type: 2}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -543,6 +558,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isEnemy: 1
+  scripts: {fileID: 0}
+  bar: {fileID: 0}
+  kills: {fileID: 0}
+  puddle: {fileID: 0}
+  smoke: {fileID: 19894380, guid: 97d83ba77ae60ab4391800cc0114095b, type: 2}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -556,6 +576,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isEnemy: 1
+  scripts: {fileID: 0}
+  bar: {fileID: 0}
+  kills: {fileID: 0}
+  puddle: {fileID: 0}
+  smoke: {fileID: 19894380, guid: 97d83ba77ae60ab4391800cc0114095b, type: 2}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -569,6 +594,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isEnemy: 1
+  scripts: {fileID: 0}
+  bar: {fileID: 0}
+  kills: {fileID: 0}
+  puddle: {fileID: 0}
+  smoke: {fileID: 19894380, guid: 97d83ba77ae60ab4391800cc0114095b, type: 2}
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -582,6 +612,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isEnemy: 1
+  scripts: {fileID: 0}
+  bar: {fileID: 0}
+  kills: {fileID: 0}
+  puddle: {fileID: 0}
+  smoke: {fileID: 19894380, guid: 97d83ba77ae60ab4391800cc0114095b, type: 2}
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -595,6 +630,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isEnemy: 1
+  scripts: {fileID: 0}
+  bar: {fileID: 0}
+  kills: {fileID: 0}
+  puddle: {fileID: 0}
+  smoke: {fileID: 19894380, guid: 97d83ba77ae60ab4391800cc0114095b, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
