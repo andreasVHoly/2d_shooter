@@ -197,6 +197,7 @@ public class HealthScript : MonoBehaviour {
 				PlayerPrefs.SetInt("Score",kills.amount);//we set new entry, for the gamewon/gameover scene
 				PlayerPrefs.Save();//we save the changes
 			}
+			Destroy(collider.gameObject);
 		}
 
 

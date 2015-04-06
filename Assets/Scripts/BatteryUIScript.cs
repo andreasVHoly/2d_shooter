@@ -18,5 +18,8 @@ public class BatteryUIScript : MonoBehaviour {
 		if (image.fillAmount <= 0.20){//if we have less= 20% charge
 			image.color = Color.red;//change the color to red
 		}
+		else if (image.fillAmount > 0.20){//if we have less= 20% charge
+			image.color = Color.green;//change the color to red
+		}
 	}
 }

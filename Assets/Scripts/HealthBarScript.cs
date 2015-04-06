@@ -25,5 +25,11 @@ public class HealthBarScript : MonoBehaviour {
 		else if (image.fillAmount <= 0.5){//if we have less= 50% health
 			image.color = Color.yellow;//change the color to yellow
 		}
+		if (image.fillAmount <= 0.25){//if we have less= 25% health
+			image.color = Color.red;//change the color to red
+		}
+		else if (image.fillAmount > 0.5){//if we have less= 50% health
+			image.color = Color.green;//change the color to yellow
+		}
 	}
 }

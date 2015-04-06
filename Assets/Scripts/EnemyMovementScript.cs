@@ -138,7 +138,7 @@ public class EnemyMovementScript : MonoBehaviour {
 		else if(rayCast){
 			prey = rayCast.transform.gameObject;//assign player to hunt
 			chasing = true;//set value true
-			sound.playZombieSound();//play sound
+			//sound.playZombieSound();//play sound
 		}
 		//if we are not chasing and cant see a player
 		else{
@@ -147,7 +147,7 @@ public class EnemyMovementScript : MonoBehaviour {
 			chasing = false;//just to be sure
 			//if we have moved for traveldistance or need to be forced to move
 			if (counter > travelDistance || move) {
-				sound.playZombieSound();//play sound
+
 				//we get a random number to decide our direction of movement
 				int number = Random.Range (0, 3);//new direction of movement
 				travelDistance = Random.Range(120,1200);//new travel distance
@@ -190,21 +190,25 @@ public class EnemyMovementScript : MonoBehaviour {
 		if(orientation == DirectionEnumScript.Direction.NORTH){
 			if(srender.sprite != up){
 				srender.sprite = up;
+				sound.playZombieSound();//play sound
 			}
 		}
 		else if (orientation == DirectionEnumScript.Direction.SOUTH){
 			if(srender.sprite != down){
 				srender.sprite = down;
+				sound.playZombieSound();//play sound
 			}
 		}
 		else if (orientation == DirectionEnumScript.Direction.EAST){
 			if(srender.sprite != right){
 				srender.sprite = right;
+				sound.playZombieSound();//play sound
 			}
 		}
 		else if (orientation == DirectionEnumScript.Direction.WEST) {
 			if(srender.sprite != left){
 				srender.sprite = left;
+				sound.playZombieSound();//play sound
 			}
 		}
 		//we make a new vector for the movement of where our object should be in relation to the direction, and its new position it will attain by moving with its speed
